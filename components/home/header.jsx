@@ -8,11 +8,24 @@ const Header = (props) => {
         <div className="header-content">
             <h1>{props.title}</h1>
             <p>{props.description}</p>
+            <button className="header-link" onClick={()=>{
+                window.scrollTo(0,950)
+            }}><span>Learn More</span> <ArrowDownwardIcon className='header-link-icon' /></button>
 
-            <button className="header-link"><span>Learn More</span> <ArrowDownwardIcon className='header-link-icon'/></button>
         </div>
         <div className="header-background">
 
+        </div>
+        <div className='header-floater'>
+            <div className='header-floater-1'/>
+            <div className='header-floater-2'/>
+            <div className='header-floater-3'/>
+            <div className='header-floater-4'/>
+            <div className='header-floater-5'/>
+            <div className='header-floater-6'/>
+            <div className='header-floater-7'/>
+            <div className='header-floater-8'/>
+            <div className='header-floater-9'/>
         </div>
     </div>)
 }
