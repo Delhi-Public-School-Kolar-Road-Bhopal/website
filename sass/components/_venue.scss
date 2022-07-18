@@ -6,7 +6,16 @@
     justify-content: space-between;
     align-items: center;
 
+    @include respond(tablet) {
+        display: block;
+    }
+
     &-left {
+
+        @include respond(tablet) {
+            width: 100%;
+        }
+
         &-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -39,6 +48,11 @@
     }
 
     &-venue {
+        @include respond(tablet) {
+            width: 100%;
+            margin: 4rem auto;
+        }
+
         width: 45%;
     }
 }

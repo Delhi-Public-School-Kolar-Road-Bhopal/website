@@ -371,9 +371,19 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+}
 .container-left {
   font-size: 2rem;
   width: 45%;
+}
+@media (max-width: 768px) {
+  .container-left {
+    width: 100%;
+  }
 }
 .container-left-container {
   display: grid;
@@ -396,6 +406,12 @@ body {
 }
 .container-venue {
   width: 45%;
+}
+@media (max-width: 768px) {
+  .container-venue {
+    width: 100%;
+    margin: 4rem auto;
+  }
 }
 
 /*# sourceMappingURL=globals.css.map */
