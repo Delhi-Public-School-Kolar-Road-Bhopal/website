@@ -517,8 +517,11 @@ body {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
 }
 .info-section-e:nth-child(1) {
-  grid-column-start: 3;
+  grid-column-start: 1;
   grid-column-end: 3;
+}
+.info-section-e:nth-child(3) {
+  grid-row-start: span 2;
 }
 .info-section-e-cover {
   filter: blur(0.4rem);
@@ -578,6 +581,7 @@ body {
 .info-section-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 4rem;
 }
 .info-section h2 {
   font-size: 3rem;
