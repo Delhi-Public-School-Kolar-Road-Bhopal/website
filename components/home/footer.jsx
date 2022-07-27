@@ -13,11 +13,11 @@ const Footer = (props) => {
             <div className="footer-container-right">
                 <h4>Find us on</h4>
                 <div>
-                    <a><FacebookIcon /></a>
-                    <a><TwitterIcon /></a>
-                    <a><InstagramIcon /></a>
+                    <a href="https://github.com/"><FacebookIcon style={{ color: "#fff", fontSize: "2rem" }}/></a>
+                    <a href="https://github.com/"><TwitterIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }}/></a>
+                    <a href="https://github.com/"><InstagramIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }}/></a>
                 </div>
-                <h4>Check out our codebase on <a href='https://github.com/Delhi-Public-School-Kolar-Road-Bhopal'><GitHub /></a></h4>
+                <h4 style={{ display: 'flex', alignItems: 'center' }}>Check out our codebase on <a href='https://github.com/Delhi-Public-School-Kolar-Road-Bhopal'><GitHub style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a></h4>
 
             </div>
         </div>

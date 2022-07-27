@@ -1,0 +1,18 @@
+.footer {
+    width: 100vw;
+    padding: 4rem;
+    font-size: 1.4rem;
+    color: $colorTertiaryGradient1;
+    background-color: black;
+    text-align: center;
+
+    &-container {
+        display: grid;
+        max-width: 70rem;
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+}

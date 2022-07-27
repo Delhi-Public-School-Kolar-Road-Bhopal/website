@@ -721,4 +721,22 @@ body {
   font-size: 3rem;
 }
 
+.footer {
+  width: 100vw;
+  padding: 4rem;
+  font-size: 1.4rem;
+  color: #F8F8F8;
+  background-color: black;
+  text-align: center;
+}
+.footer-container {
+  display: grid;
+  max-width: 70rem;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: left;
+}
+
 /*# sourceMappingURL=globals.css.map */

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/home/header'
 import Venue from '../components/home/venue_timing'
 import InfoSection from '../components/home/infoSection'
+import Footer from '../components/home/footer'
 const Home = () => {
   return (<div>
     <Head>
@@ -13,6 +14,7 @@ const Home = () => {
       video={{ src: '/cover.mp4' }} />
     <Venue />
     <InfoSection />
+    <Footer />
   </div>
   )
 }
