@@ -81,7 +81,7 @@ const InfoSection = () => {
                         <div className="info-section-each-modal-container">
                             <div className='info-section-each-modal-content-container'>
 
-                            <video autoPlay muted loop src={a.liveVideo} className="info-section-each-modal-content-cover" />
+                                <video autoPlay muted loop src={a.liveVideo} className="info-section-each-modal-content-cover" />
                                 <div className="info-section-each-modal-content">
                                     <label htmlFor="-1"><CloseIcon className='info-section-each-modal-content-icon' /></label>
                                     <h3>
@@ -92,12 +92,15 @@ const InfoSection = () => {
                                         {a.description}
                                     </p>
                                     <table>
-                                        <tr><th>Teams Per School</th> <td>{a.tps}</td></tr>
+                                        <tbody>
+                                            <tr><th>Teams Per School</th> <td>{a.tps}</td></tr>
 
-                                        <tr><th>Players Per Team</th><td>{a.players}</td></tr>
-                                        <tr><th>Total Teams</th><td>{a.teams}</td> </tr>
-                                        <tr><th>Timing</th><td>{a.timing}</td></tr>
-                                        <tr><th>Venue</th><td>{a.venue}</td></tr>
+                                            <tr><th>Players Per Team</th><td>{a.players}</td></tr>
+                                            <tr><th>Total Teams</th><td>{a.teams}</td> </tr>
+                                            <tr><th>Timing</th><td>{a.timing}</td></tr>
+                                            <tr><th>Venue</th><td>{a.venue}</td></tr>
+
+                                        </tbody>
 
                                     </table>
                                     <a className="info-section-each-modal-register" href='/register'>
