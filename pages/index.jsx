@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/home/header'
 import Venue from '../components/home/venue_timing'
-
+import InfoSection from '../components/home/infoSection'
 const Home = () => {
   return (<div>
     <Head>
@@ -12,6 +12,7 @@ const Home = () => {
       description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
       video={{ src: '/cover.mp4' }} />
     <Venue />
+    <InfoSection />
   </div>
   )
 }
