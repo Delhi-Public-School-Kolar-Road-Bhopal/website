@@ -721,6 +721,31 @@ body {
   font-size: 3rem;
 }
 
+.cta-register {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem auto;
+  max-width: 50rem;
+}
+.cta-register a {
+  text-transform: uppercase;
+  padding: 2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.32);
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.cta-register a:first-child {
+  background-image: linear-gradient(to right bottom, #27B32A, #92FE45);
+}
+.cta-register a:hover {
+  transform: scale(1.05);
+}
+
 .footer {
   width: 100vw;
   padding: 4rem;

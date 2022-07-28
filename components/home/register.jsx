@@ -1,7 +1,7 @@
 const Register = () =>{
     return(<div className="cta-register">
-         <a>Register</a>
-         <a>About us</a>
+         <a href="/register">Register</a>
+         <a href="/about">About us</a>
     </div>)
 }
 
