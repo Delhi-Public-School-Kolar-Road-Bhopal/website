@@ -7,6 +7,7 @@ const Home = () => {
   return (<div>
     <Head>
       <title>DPS Kolar Tech Fest</title>
+      <meta name="robots" content="all" />
       <meta name='description'
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"></meta>
       <meta name="og:image" content="/icon.png" />
