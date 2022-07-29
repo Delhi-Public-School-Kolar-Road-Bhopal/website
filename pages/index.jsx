@@ -7,6 +7,12 @@ const Home = () => {
   return (<div>
     <Head>
       <title>DPS Kolar Tech Fest</title>
+      <meta name='description' 
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"></meta>
+    <meta name="og:image" content="/favicon.ico" />
+    <meta name='og:description' 
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"></meta>
+
     </Head>
     <Header
       title={"Welcome To DPS Kolar Tech Fest"}
