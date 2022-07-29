@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 
-import Link from 'next/Link'
+import Link from 'next/link'
 const Register = () => {
     return (<div className="cta-register">
         <Link href="/register"><span>Register</span></Link >

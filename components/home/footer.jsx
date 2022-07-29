@@ -1,7 +1,7 @@
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import Link from 'next/Link'
+import Link from 'next/link'
 import { GitHub } from '@mui/icons-material';
 
 const Footer = (props) => {
