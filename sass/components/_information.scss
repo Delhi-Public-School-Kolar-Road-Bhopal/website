@@ -1,14 +1,7 @@
 .info-section {
-    
     width: 90%;
     max-width: 120rem;
     margin: 4rem auto;
-
-
-
-    ;
-
-    // overflow: hidden;
     &-e {
         @include respond(tablet) {
             display: block;
@@ -86,7 +79,7 @@
             z-index: 6;
             top: 0;
             left: 0;
-
+            visibility: hidden;
             color: black;
             background-image: linear-gradient(to left bottom, rgba(black, .7), rgba(black, 0.9));
             position: fixed;
@@ -207,6 +200,8 @@
 
         &-checkbox:checked~&-modal {
             transform: translate(0, 0);
+            visibility: visible;
+            // display: block;
 
         }
 

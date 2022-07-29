@@ -602,6 +602,7 @@ body {
   z-index: 6;
   top: 0;
   left: 0;
+  visibility: hidden;
   color: black;
   background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
   position: fixed;
@@ -710,6 +711,7 @@ body {
 }
 .info-section-each-checkbox:checked ~ .info-section-each-modal {
   transform: translate(0, 0);
+  visibility: visible;
 }
 .info-section-each h3 {
   font-size: 3rem;
