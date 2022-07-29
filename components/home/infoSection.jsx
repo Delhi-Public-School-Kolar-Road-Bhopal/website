@@ -1,5 +1,6 @@
 //event details, in form of a expandable items in a carousel
 import CloseIcon from '@mui/icons-material/Close';
+import Link from 'next/link';
 const InfoSection = () => {
     const info = [{
         name: 'Programming Events',
@@ -103,9 +104,9 @@ const InfoSection = () => {
                                         </tbody>
 
                                     </table>
-                                    <a className="info-section-each-modal-register" href='/register'>
-                                        Register
-                                    </a>
+                                    <Link href='/register'>
+                                        <span className="info-section-each-modal-register">Register</span>
+                                    </Link>
                                 </div>
 
                             </div>
