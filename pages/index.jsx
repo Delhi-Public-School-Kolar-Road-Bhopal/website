@@ -12,6 +12,7 @@ const Home = () => {
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"></meta>
       <meta name="og:image" content="/icon.png" />
       <link rel='icon' href='/icon.png' />
+      <link rel='apple-touch-icon' href='/icon.png' />
       <meta name='og:description'
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"></meta>
 
