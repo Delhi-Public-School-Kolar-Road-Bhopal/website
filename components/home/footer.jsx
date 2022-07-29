@@ -1,6 +1,7 @@
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Link from 'next/Link'
 import { GitHub } from '@mui/icons-material';
 
 const Footer = (props) => {
@@ -12,10 +13,10 @@ const Footer = (props) => {
             </div>
             <div className="footer-container-right">
                 <div>
-                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/">Home</a>
-                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/about">About us</a>
-                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/register">Register</a>
-                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/contact">Contact us</a>
+                    <Link href="/"><span className='footer-link'>Home</span></Link>
+                    <Link className='footer-link' href="/about"><span className='footer-link'>About us</span></Link>
+                    <Link className='footer-link' href="/register"><span className='footer-link'>Register</span></Link>
+                    <Link className='footer-link' href="/contact"><span className='footer-link'>Contact us</span></Link>
                 </div>
                 <h4>Find us on</h4>
                 <div>

@@ -286,9 +286,13 @@
     &-register {
         width: 90%;
 
-        a {
+        span{
             text-transform: uppercase;
 
+            @include respond(tablet){
+                // display: inline-block;
+                text-align: center;
+            }
             padding: 2rem;
             box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.32);
 
@@ -320,5 +324,13 @@
         justify-content: space-between;
         margin: 10rem auto;
         max-width: 50rem;
+        @include respond(tablet){
+            display: grid;
+            align-items: center;
+            grid-gap: 4rem;
+            justify-content: center;
+
+        }
+
     }
 }

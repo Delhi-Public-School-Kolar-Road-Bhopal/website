@@ -43,23 +43,29 @@
         }
     }
 
+  
+
     &-organizers {
         display: grid;
 
         @include respond(tablet) {
             grid-template-columns: repeat(2, 1fr);
         }
+
         @include respond(phone) {
             grid-template-columns: 1fr;
             // align-items: flex-start;
         }
+
         &-each {
             position: relative;
             box-shadow: 0 0 3rem 0 rgba(black, 0.5);
+
             @include respond(phone) {
-                grid-column-start: 1 !important ;
+                grid-column-start: 1 !important;
                 // align-items: flex-start;
             }
+
             &-image {
                 z-index: -1;
                 height: 100%;
