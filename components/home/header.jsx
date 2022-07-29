@@ -24,7 +24,6 @@ const Header = (props) => {
             <div className='header-floater-3' />
             <div className='header-floater-4' />
             <div className='header-floater-5' />
-            <div className='header-floater-6' />
             <div className='header-floater-7' />
             <div className='header-floater-8' />
             <div className='header-floater-9' />
