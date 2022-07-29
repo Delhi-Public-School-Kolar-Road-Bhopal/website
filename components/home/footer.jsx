@@ -11,12 +11,19 @@ const Footer = (props) => {
                 <br /> © DPS Kolar Technoclub 2022
             </div>
             <div className="footer-container-right">
+                <div>
+                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/">Home</a>
+                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/about">About us</a>
+                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/register">Register</a>
+                    <a style={{ color: "#fff", fontSize: "1.4rem", textDecoration:'none', margin:'0 3rem 0 0' }} href="/contact">Contact us</a>
+                </div>
                 <h4>Find us on</h4>
                 <div>
-                    <a href="https://github.com/"><FacebookIcon style={{ color: "#fff", fontSize: "2rem" }}/></a>
-                    <a href="https://github.com/"><TwitterIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }}/></a>
-                    <a href="https://github.com/"><InstagramIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }}/></a>
+                    <a href="https://github.com/"><FacebookIcon style={{ color: "#fff", fontSize: "2rem" }} /></a>
+                    <a href="https://github.com/"><TwitterIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a>
+                    <a href="https://github.com/"><InstagramIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a>
                 </div>
+
                 <h4 style={{ display: 'flex', alignItems: 'center' }}>Check out our codebase on <a href='https://github.com/Delhi-Public-School-Kolar-Road-Bhopal'><GitHub style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a></h4>
 
             </div>

@@ -23,6 +23,7 @@ const Handler = (req, res) => {
         event,
         members
     } = req.body;
+
     let team = new Team(school, event, members);
     if (registered.find(t => t.school = team.school && t.event === team.event)) {
         return res.status(400).json({

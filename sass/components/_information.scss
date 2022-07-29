@@ -201,7 +201,7 @@
 
             width: 100vw;
             height: 100vh;
-            transform: translate(0, -100vh);
+            transform: translate(0, calc(-100vh - 1rem));
         }
 
         &-checkbox:checked~&-modal {
@@ -288,17 +288,27 @@
 
         a {
             text-transform: uppercase;
-            
-            padding:2rem;
+
+            padding: 2rem;
             box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.32);
+
             &:first-child {
                 // color:#000;
                 background-image: linear-gradient(to right bottom, $colorPrimaryGradient2, $colorPrimaryGradient1);
             }
-            transition: all 0.3s;;
-            &:hover{
+
+            &:last-child {
+                // color:#000;
+                background-image: linear-gradient(to right bottom, $colorPrimaryGradient2, $colorPrimaryGradient1);
+            }
+
+            transition: all 0.3s;
+            ;
+
+            &:hover {
                 transform: scale(1.05);
             }
+
             border-radius: .5rem;
             cursor: pointer;
             color: #000;

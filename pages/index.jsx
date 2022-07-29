@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Header from '../components/home/header'
 import Venue from '../components/home/venue_timing'
 import InfoSection from '../components/home/infoSection'
-import Footer from '../components/home/footer'
 import Register from '../components/home/register'
 const Home = () => {
   return (<div>
@@ -16,7 +15,6 @@ const Home = () => {
     <Venue />
     <InfoSection />
     <Register />
-    <Footer />
   </div>
   )
 }
