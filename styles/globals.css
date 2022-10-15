@@ -701,8 +701,8 @@ body {
   top: 0;
   left: 0;
   visibility: hidden;
-  color: black;
-  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  color: white;
+  background-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
   position: fixed;
   backdrop-filter: blur(0.8rem);
   transition: all 0.3s;
@@ -711,20 +711,46 @@ body {
   height: 100vh;
   transform: translate(0, calc(-100vh - 1rem));
 }
-.info-section-each-modal table {
-  width: 80%;
-  margin: 4rem auto;
+.info-section-each-modal *::-webkit-scrollbar {
+  width: 1rem;
 }
-.info-section-each-modal table tr {
+.info-section-each-modal *::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+.info-section-each-modal h2 {
+  cursor: copy;
+  display: inline-block;
+  width: auto;
+  position: relative;
+  font-size: 4rem !important;
+}
+.info-section-each-modal h2::after {
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  transform: translate(-0.5rem, 0);
+  height: 0.01rem;
+  position: absolute;
+  z-index: -1;
+  content: " ";
+  cursor: copy;
+  background-image: linear-gradient(to right, #D60270, #9B4F96, #0038A8);
+}
+.info-section-each-modal h2:hover {
+  color: #F8F8F8;
+}
+.info-section-each-modal h2:hover::after {
+  top: -0.5rem;
+  height: 100%;
+  border-radius: 0.6rem;
+}
+.info-section-each-modal tr {
+  width: 40rem;
+  align-items: center;
+  display: flex;
   justify-content: space-between;
-}
-.info-section-each-modal table td {
-  text-align: right;
-  font-weight: 900;
-}
-.info-section-each-modal table th {
-  text-transform: uppercase;
-  text-align: left;
 }
 .info-section-each-modal-register {
   cursor: pointer;
@@ -732,7 +758,7 @@ body {
   display: inline-block;
   margin: 3rem auto;
   text-decoration: none;
-  color: black !important;
+  color: white !important;
   position: relative;
   transition: all 0.3s;
 }
@@ -748,10 +774,10 @@ body {
   transform: translate(-1rem, -1rem);
   z-index: -1;
   content: " ";
-  background-color: black;
+  background-color: white;
 }
 .info-section-each-modal-register:hover {
-  color: white !important;
+  color: black !important;
 }
 .info-section-each-modal-register:hover::after {
   opacity: 1;
@@ -771,13 +797,24 @@ body {
   user-select: auto !important;
   width: calc(100% - 2rem);
   max-height: 80vh;
-  overflow: auto;
   font-size: 2rem;
   z-index: 8;
 }
+.info-section-each-modal-content-outer {
+  background-color: #011620;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.info-section-each-modal-content-inner {
+  margin: 1rem;
+  padding: 1rem 1.4rem;
+  background-color: #011620;
+  max-height: 50vh;
+  overflow: auto;
+}
 .info-section-each-modal-content-container {
   border-radius: 1rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+  background-color: #121212;
   position: fixed;
   max-width: 100rem;
   width: 80%;

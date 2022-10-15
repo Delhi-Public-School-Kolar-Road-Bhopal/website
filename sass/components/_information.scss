@@ -2,6 +2,7 @@
     width: 90%;
     max-width: 120rem;
     margin: 4rem auto;
+
     &-e {
         @include respond(tablet) {
             display: block;
@@ -56,32 +57,69 @@
         }
 
         &-modal {
-            table {
-                width: 80%;
-                margin: 4rem auto;
+            * {
+                &::-webkit-scrollbar {
+                    width: 1rem;
 
-                // box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.32);
-                tr {
-                    justify-content: space-between;
+                    &-thumb {
+                        background-color: white;
+                    }
                 }
 
-                td {
-                    text-align: right;
-                    font-weight: 900;
-                }
-
-                th {
-                    text-transform: uppercase;
-                    text-align: left;
-                }
             }
+
+            h2 {
+                &::after {
+                    width: 100%;
+                    top: 100%;
+                    left: 0%;
+                    transition: all 0.3s;
+                    padding: .5rem;
+                    transform: translate(-.5rem, 0);
+                    height: .01rem;
+                    position: absolute;
+                    z-index: -1;
+                    content: " ";
+
+                    cursor: copy;
+                    background-image: linear-gradient(to right, #D60270, #9B4F96, #0038A8);
+                }
+
+                cursor: copy;
+
+                &:hover {
+
+                    color: $colorTertiaryGradient1;
+
+                    &::after {
+                        top: -.5rem;
+                        height: 100%;
+                        border-radius: .6rem;
+
+                    }
+                }
+
+                display: inline-block;
+                width: auto;
+                position: relative;
+                font-size: 4rem !important;
+            }
+
+            tr {
+                width: 40rem;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+
+
 
             z-index: 6;
             top: 0;
             left: 0;
             visibility: hidden;
-            color: black;
-            background-image: linear-gradient(to left bottom, rgba(black, .7), rgba(black, 0.9));
+            color: white;
+            background-image: linear-gradient(to left bottom, rgba(white, .5), rgba(white, 0.9));
             position: fixed;
 
             &-register {
@@ -90,7 +128,7 @@
                 display: inline-block;
                 margin: 3rem auto;
                 text-decoration: none;
-                color: black !important;
+                color: white !important;
                 position: relative;
                 transition: all 0.3s;
 
@@ -107,17 +145,15 @@
                     transform: translate(-1rem, -1rem);
                     z-index: -1;
                     content: " ";
-                    background-color: black;
+                    background-color: white;
 
                 }
 
                 &:hover {
-                    color: white !important;
+                    color: black !important;
 
                     &::after {
                         opacity: 1;
-
-                        // transform: translate(-50%, -50%);
                         width: 100%
                     }
                 }
@@ -138,10 +174,23 @@
             }
 
             &-content {
+                &-outer{
+                    background-color: #011620;
+                    border-radius: 1rem;
+                    padding:1rem;
+                }
+                &-inner {
+                    // border-radius: 1rem;
+                    margin: 1rem;
+                    padding: 1rem 1.4rem;
+                    background-color: #011620;
+                    max-height: 50vh;
+                    overflow: auto;
+                }
+
                 &-container {
                     border-radius: 1rem;
-
-                    background-image: linear-gradient(to right bottom, rgba(white, 0.8), rgba(white, 0.9));
+                    background-color: #121212;
                     position: fixed;
                     max-width: 100rem;
                     width: 80%;
@@ -186,7 +235,7 @@
                 user-select: auto !important;
                 width: calc(100% - 2rem);
                 max-height: 80vh;
-                overflow: auto;
+                // overflow: auto;
                 font-size: 2rem;
                 z-index: 8;
             }
@@ -282,13 +331,14 @@
     &-register {
         width: 90%;
 
-        span{
+        span {
             text-transform: uppercase;
 
-            @include respond(tablet){
+            @include respond(tablet) {
                 // display: inline-block;
                 text-align: center;
             }
+
             padding: 2rem;
             box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.32);
 
@@ -320,7 +370,8 @@
         justify-content: space-between;
         margin: 10rem auto;
         max-width: 50rem;
-        @include respond(tablet){
+
+        @include respond(tablet) {
             display: grid;
             align-items: center;
             grid-gap: 4rem;

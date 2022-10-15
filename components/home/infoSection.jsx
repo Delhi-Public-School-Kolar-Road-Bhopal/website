@@ -3,14 +3,15 @@ import CloseIcon from '@mui/icons-material/Close';
 import Link from 'next/link';
 const InfoSection = () => {
     const info = [{
-        name: 'Programming Events',
+        name: 'Esprit decode',
         liveVideo: '/cover-coding.mp4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
-        teams: 16,
-        tps: 5,
-        players: 2,
-        venue: "Lorem Ipsum",
-        timing: '10:00 AM - 12:00 PM',
+        description: `This event tests participants\' abilities to program solutions to the presented problems using Python or JavaScript. The event will have three non-parallel
+        rounds which will test participants\' algorithmic abilities. In addition, there will be a Data Structure round which will run parallel to the other rounds. 
+        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        venue: "Senior Computer Lab",
+        timing: 'The event will last for approximately 3 hours, without accounting for breaks. The first round will last for 30 minutes. The second round will last for an hour. The third round will last for an hour and thirty minutes. You will be allowed to work on questions from the previous round(s) and the Data Structure during the second and third rounds',
+        tps: 1,
+        participants: 2
 
     },
     {
@@ -85,26 +86,51 @@ const InfoSection = () => {
                                 {/* <video autoPlay muted loop src={a.liveVideo} className="info-section-each-modal-content-cover" /> */}
                                 <div className="info-section-each-modal-content">
                                     <label htmlFor="-1"><CloseIcon className='info-section-each-modal-content-icon' /></label>
-                                    <h3>
+                                    <h2>
                                         {a.name}
-                                    </h3>
+                                    </h2>
+                                    <div className="info-section-each-modal-content-outer">
 
-                                    <p className="info-section-modal-description">
-                                        {a.description}
-                                    </p>
-                                    <table>
-                                        <tbody>
-                                            <tr><th>Teams Per School</th> <td>{a.tps}</td></tr>
+                                    <div className="info-section-each-modal-content-inner">
+                                        <h3>
+                                            Rules
+                                        </h3>
 
-                                            <tr><th>Players Per Team</th><td>{a.players}</td></tr>
-                                            <tr><th>Total Teams</th><td>{a.teams}</td> </tr>
-                                            <tr><th>Timing</th><td>{a.timing}</td></tr>
-                                            <tr><th>Venue</th><td>{a.venue}</td></tr>
+                                        <ul className="info-section-modal-description">
 
-                                        </tbody>
+                                            {a.description.split('.').map((a, index) => {
+                                                return <li key={index}>{a}</li>
+                                            })}
+                                        </ul>
+                                        <h3>
+                                            Timings
+                                        </h3>
+                                        <ul className="info-section-modal-description">
+                                            {a.timing.split('.').map((a, index) => {
+                                                return <li key={index}>{a}</li>
+                                            })}
+                                        </ul>
 
-                                    </table>
-                                    <Link href='/register'>
+                                        <tr><th><h3>Venue: </h3></th><td>{a.venue}</td></tr>
+
+
+                                        <div>
+
+                                            <tr><th>Players Per Team</th><td>{a.participants}</td></tr>
+
+                                        </div>
+                                    </div>
+                                    
+                                    </div>
+                                    <Link href={'/register/' + a.name.split(' ').map((a, index) => {
+                                        console.log(a)
+                                        if (index === 1) {
+                                            return '-' + a
+                                        }
+                                        else {
+                                            return a
+                                        }
+                                    }).join('').toLowerCase()}>
                                         <span className="info-section-each-modal-register">Register</span>
                                     </Link>
                                 </div>
