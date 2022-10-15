@@ -432,13 +432,28 @@ body {
   padding: 4rem;
   margin: 0 auto;
   max-width: 100%;
-  height: calc(100% - 10rem);
+  width: 100rem;
+  height: calc(100% - 20rem);
+  overflow: hidden;
 }
 .register-home h2 {
   font-size: 2.6rem;
 }
+@media (max-width: 768px) {
+  .register-home h2 {
+    margin: 0 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .register-home {
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 100%;
+    height: calc(100% - 4rem);
+  }
+}
 .register-home-container {
-  height: 80%;
+  height: calc(100% - 20rem);
   grid-gap: 2rem;
   width: 100%;
   overflow: auto;
@@ -449,23 +464,37 @@ body {
 }
 .register-home-container-each {
   height: 15rem !important;
-  display: flex;
+  display: block;
+  position: relative;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .register-home-container-each h3 {
   font-size: 3rem !important;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .register-home-container-each h3 {
+    font-size: 1.6rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .register-home-container {
+    grid-template-columns: auto;
+    padding: 2rem 2rem;
+  }
 }
 .register-home-container div {
-  width: 30rem;
+  width: 100%;
   margin: 2rem 0;
 }
 @media (max-width: 768px) {
-  .register-home-container div {
-    width: 40%;
-  }
-}
-@media (max-width: 576px) {
   .register-home-container div {
     width: 100%;
   }
@@ -561,11 +590,21 @@ body {
   width: 100%;
 }
 .register-header-2 {
-  width: 50rem !important;
+  min-width: 10rem;
+  max-width: 50rem !important;
 }
 .register-header-2 h1 {
   text-align: center;
-  width: 15rem !important;
+  width: 15rem;
+}
+@media (max-width: 768px) {
+  .register-header-2 h1 {
+    word-wrap: break-word;
+    width: 3rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+  }
 }
 .register-header {
   justify-content: center;
