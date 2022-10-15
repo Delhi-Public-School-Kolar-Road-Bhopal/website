@@ -1,34 +1,62 @@
-
+import Link from "next/link";
+const info = [{
+    name: 'Espit Decode',
+    liveVideo: '/cover-coding.mp4',
+    link: 'register/esprit-decode'
+},
+{
+    name: 'Foto Perfecta',
+    liveVideo: '/cover-photography.mp4',
+    link: 'register/foto-perfecta'
+},
+{
+    name: 'Parabellum',
+    liveVideo: '/valorant-cover.mp4',
+    link: 'register/parabellum'
+},
+{
+    name: 'Site Incroyable',
+    liveVideo: '/cover-cryptic.mp4',
+    link: 'register/site-incroyable'
+},
+{
+    name: 'Scio',
+    liveVideo: '/cover-coding.mp4',
+    link: 'register/scio'
+},
+{
+    name: 'Filmscaping',
+    liveVideo: '/cover-cryptic.mp4',
+    link: 'register/filmscaping'
+}]
 const Register = () => {
+    console.log(info);
     return (
         <div className="register">
-            <div className="register-header">
+            <div className="register-header register-header-2">
                 <h1>Register</h1>
-                <video src='cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
+                <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
-            <div className="register-body">
-                <form className="register-form">
-                    <div className="register-input">
-                        <p>School Name</p>
-                        <input type="text" placeholder="School Name" />
-                    </div>
-                    <div className="register-input">
-                        <p>Team Name</p>
-                        <input type="text" placeholder="Team Name" />
-                    </div>
-                    <div className="register-input">
-                        <p>Event</p>
-                        <input type="text" placeholder="Select Event" />
-                    </div>
-                    <div className="register-input">
-                        <p>Email</p>
-                        <input type="email" placeholder="Email@website.com" />
-                    </div>
-
-                    <button className="register-button">Register</button>
-                </form>
-
+            <div className="register-home">
+                <h2>Which event do you want to register for?</h2>
+                <div className="register-home-container">
+                    {info.map((a, index) => {
+                        console.log(a)
+                        return (<div>
+                            <Link href={a.link} key={index}>
+                                <div className="info-section-e register-home-container-each">
+                                    <video autoPlay muted loop src={a.liveVideo} className="info-section-e-cover" />
+                                    <h3>
+                                        {a.name}
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+                        )
+                    })}
+                </div>
             </div>
+
 
         </div >
     )

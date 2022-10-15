@@ -4,6 +4,57 @@
     width: 100vw;
     align-items: center;
 
+    &-home {
+        padding: 4rem;
+
+        h2 {
+            font-size: 2.6rem;
+        }
+
+        padding: 4rem;
+        margin: 0 auto ;
+        max-width: 100%;
+        height: calc(100% - 10rem);
+
+        &-container {
+            &-each {
+                height: 15rem !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    font-size: 3rem !important;
+
+                }
+
+            }
+
+            height: 80%;
+            grid-gap: 2rem;
+            width: 100%;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            overflow-x: hidden;
+            padding:2rem;
+
+            div {
+
+                @include respond(tablet) {
+                    width: 40%;
+                }
+
+                @include respond(phone) {
+                    width: 100%;
+                }
+
+                width: 30rem;
+                margin: 2rem 0;
+            }
+
+        }
+    }
 
     &-button {
         margin: 0 auto;
@@ -35,12 +86,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         height: 100%;
     }
 
     &-form {
-        width: calc(100%  - 10rem);
+        width: calc(100% - 10rem);
         max-width: 100rem;
         overflow-y: auto;
         margin: 2rem auto;
@@ -111,6 +162,16 @@
         }
     }
 
+    &-header-2 {
+        h1 {
+            text-align: center;
+            width: 15rem !important;
+            // width: 30%;
+        }
+
+        width: 50rem !important;
+    }
+
     &-header {
 
         justify-content: center;
@@ -123,9 +184,17 @@
         h1 {
             @include respond(tablet) {
                 word-wrap: break-word;
-                width: 2rem;
+                width: 3rem;
+                padding: 1rem;
+                text-align: center;
+                // display: flex;
+                // align-items: center;
+                // flex-direction: column;
+                // justify-content: center;
+                margin: 1rem;
                 // display: none;
             }
+
             width: 24rem;
             color: $colorTertiaryGradient1;
             border-radius: .5rem;

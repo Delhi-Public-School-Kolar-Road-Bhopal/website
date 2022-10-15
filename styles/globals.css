@@ -427,6 +427,49 @@ body {
   width: 100vw;
   align-items: center;
 }
+.register-home {
+  padding: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  max-width: 100%;
+  height: calc(100% - 10rem);
+}
+.register-home h2 {
+  font-size: 2.6rem;
+}
+.register-home-container {
+  height: 80%;
+  grid-gap: 2rem;
+  width: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  overflow-x: hidden;
+  padding: 2rem;
+}
+.register-home-container-each {
+  height: 15rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-home-container-each h3 {
+  font-size: 3rem !important;
+}
+.register-home-container div {
+  width: 30rem;
+  margin: 2rem 0;
+}
+@media (max-width: 768px) {
+  .register-home-container div {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .register-home-container div {
+    width: 100%;
+  }
+}
 .register-button {
   margin: 0 auto;
   width: 90%;
@@ -517,6 +560,13 @@ body {
   margin: 1rem 0;
   width: 100%;
 }
+.register-header-2 {
+  width: 50rem !important;
+}
+.register-header-2 h1 {
+  text-align: center;
+  width: 15rem !important;
+}
 .register-header {
   justify-content: center;
   position: relative;
@@ -539,7 +589,10 @@ body {
 @media (max-width: 768px) {
   .register-header h1 {
     word-wrap: break-word;
-    width: 2rem;
+    width: 3rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
   }
 }
 .register-header-video {
