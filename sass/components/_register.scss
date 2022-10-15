@@ -35,17 +35,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+        height: 100%;
     }
 
     &-form {
-        width: 100%;
-        max-width: 70rem;
+        width: calc(100%  - 10rem);
+        max-width: 100rem;
+        overflow-y: auto;
+        margin: 2rem auto;
+        height: 100%;
         display: grid;
         justify-content: space-between;
+        padding: 3rem 5rem;
 
         @include respond(tablet) {
             // display: none
-            padding:2rem;
+            padding: 2rem;
             grid-gap: 2rem;
             // margin:0;
             width: calc(100% - 4rem);

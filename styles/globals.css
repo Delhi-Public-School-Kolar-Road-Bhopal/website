@@ -454,12 +454,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .register-form {
-  width: 100%;
-  max-width: 70rem;
+  width: calc(100% - 10rem);
+  max-width: 100rem;
+  overflow-y: auto;
+  margin: 2rem auto;
+  height: 100%;
   display: grid;
   justify-content: space-between;
+  padding: 3rem 5rem;
   grid-template-columns: 1fr 1fr;
   grid-gap: 4rem;
 }

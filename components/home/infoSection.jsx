@@ -82,7 +82,7 @@ const InfoSection = () => {
                         <div className="info-section-each-modal-container">
                             <div className='info-section-each-modal-content-container'>
 
-                                <video autoPlay muted loop src={a.liveVideo} className="info-section-each-modal-content-cover" />
+                                {/* <video autoPlay muted loop src={a.liveVideo} className="info-section-each-modal-content-cover" /> */}
                                 <div className="info-section-each-modal-content">
                                     <label htmlFor="-1"><CloseIcon className='info-section-each-modal-content-icon' /></label>
                                     <h3>
