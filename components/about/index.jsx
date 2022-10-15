@@ -114,9 +114,10 @@ const About = () => {
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                 anim id est laborum.
             </p>
-            <h3 className="about-header">Organizers</h3>
+            <h3 className="about-header">Core Organizers</h3>
             <div className='about-organizers'>
-                {organizers.map((organizer, index) => {
+                {organizers.filter(a=>a.designation === "Core Organizer").map((organizer, index) => {
+
                     return (<div className='about-organizers-each' style={organizer.designation === "Core Organizer" ? { gridColumnStart: 'span 2' } : null} key={index}>
 
                         <img className='about-organizers-each-image' src={organizer.image} alt={organizer.name + "picture"} />
@@ -130,7 +131,24 @@ const About = () => {
                     </div>)
                 })}
             </div>
-            
+
+            <h3 className="about-header">Organizers</h3>
+            <div className='about-organizers'>
+                {organizers.filter(a=>a.designation === "Organizer").map((organizer, index) => {
+
+                    return (<div className='about-organizers-each' style={organizer.designation === "Core Organizer" ? { gridColumnStart: 'span 2' } : null} key={index}>
+
+                        <img className='about-organizers-each-image' src={organizer.image} alt={organizer.name + "picture"} />
+                        <div className='about-organizers-each-header'>
+
+                            <p className='about-organizers-each-profile'>{organizer.profile}</p>
+                            <h4 className='about-organizers-each-name'>{organizer.name}</h4>
+
+                            <p className='about-organizers-each-profile'>{organizer.designation}</p>
+                        </div>
+                    </div>)
+                })}
+            </div>
         </div>
     </div>)
 }

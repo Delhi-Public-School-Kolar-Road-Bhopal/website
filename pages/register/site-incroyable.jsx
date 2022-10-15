@@ -21,11 +21,11 @@ const Register = () => {
                         return (<>
                             <div className="register-input">
                                 <p>Participant {a}'s Name</p>
-                                <input type="text" placeholder={`Player ${a}'s Name`} />
+                                <input type="text" placeholder={`Participant ${a}'s Name`} />
                             </div>
                             <div className="register-input">
                                 <p>Participant {a}'s Email</p>
-                                <input type="text" placeholder={`Player ${a}'s Email`} />
+                                <input type="text" placeholder={`Participant ${a}'s Email`} />
                             </div>
                         </>)
 
