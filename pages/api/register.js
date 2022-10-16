@@ -23,17 +23,20 @@ const Handler = (req, res) => {
         event,
         members
     } = req.body;
-
-    let team = new Team(school, event, members);
-    if (registered.find(t => t.school = team.school && t.event === team.event)) {
-        return res.status(400).json({
-            error: "Team already registered"
+    if (req.method === "POST") {
+        let team = new Team(school, event, members);
+        if (registered.find(t => t.school = team.school && t.event === team.event)) {
+            return res.status(400).json({
+                error: "Team already registered"
+            });
+        }
+        console.log(team);
+        registered.push(team);
+        return res.status(200).json({
+            message: 'Team registered'
         });
     }
-    registered.push(team);
-    return res.status(200).json({
-        message: 'Team registered'
-    });
+
 }
 
 export default Handler;

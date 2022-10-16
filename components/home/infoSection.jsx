@@ -17,52 +17,57 @@ const InfoSection = () => {
     {
         name: 'Photography',
         liveVideo: '/cover-photography.mp4',
-        description: 'Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        teams: 16,
-        tps: 5,
-        players: 2,
-        venue: "Lorem Ipsum",
-        timing: '10:00 AM - 12:00 PM',
+        description: `This event tests participants\' abilities to program solutions to the presented problems using Python or JavaScript. The event will have three non-parallel
+        rounds which will test participants\' algorithmic abilities. In addition, there will be a Data Structure round which will run parallel to the other rounds. 
+        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        venue: "Senior Computer Lab",
+        timing: 'The event will last for approximately 3 hours, without accounting for breaks. The first round will last for 30 minutes. The second round will last for an hour. The third round will last for an hour and thirty minutes. You will be allowed to work on questions from the previous round(s) and the Data Structure during the second and third rounds',
+        tps: 1,
+        participants: 2
     },
     {
         name: 'Gaming Events',
         liveVideo: '/valorant-cover.mp4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-        teams: 16,
-        tps: 5,
-        players: 2,
-        venue: "Lorem Ipsum",
-        timing: '10:00 AM - 12:00 PM',
+        description: `This event tests participants\' abilities to program solutions to the presented problems using Python or JavaScript. The event will have three non-parallel
+        rounds which will test participants\' algorithmic abilities. In addition, there will be a Data Structure round which will run parallel to the other rounds. 
+        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        venue: "Senior Computer Lab",
+        timing: 'The event will last for approximately 3 hours, without accounting for breaks. The first round will last for 30 minutes. The second round will last for an hour. The third round will last for an hour and thirty minutes. You will be allowed to work on questions from the previous round(s) and the Data Structure during the second and third rounds',
+        tps: 1,
+        participants: 2
     },
     {
         name: 'Cryptic Hunt',
         liveVideo: '/cover-cryptic.mp4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        teams: 16,
-        tps: 5,
-        players: 2,
-        venue: "Lorem Ipsum",
-        timing: '10:00 AM - 12:00 PM',
+        description: `This event tests participants\' abilities to program solutions to the presented problems using Python or JavaScript. The event will have three non-parallel
+        rounds which will test participants\' algorithmic abilities. In addition, there will be a Data Structure round which will run parallel to the other rounds. 
+        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        venue: "Senior Computer Lab",
+        timing: 'The event will last for approximately 3 hours, without accounting for breaks. The first round will last for 30 minutes. The second round will last for an hour. The third round will last for an hour and thirty minutes. You will be allowed to work on questions from the previous round(s) and the Data Structure during the second and third rounds',
+        tps: 1,
+        participants: 2
     },
     {
         name: 'Quiz',
         liveVideo: '/cover-coding.mp4',
-        description: 'Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        teams: 16,
-        tps: 5,
-        players: 2,
-        venue: "Lorem Ipsum",
-        timing: '10:00 AM - 12:00 PM',
+        description: `This event tests participants\' abilities to program solutions to the presented problems using Python or JavaScript. The event will have three non-parallel
+        rounds which will test participants\' algorithmic abilities. In addition, there will be a Data Structure round which will run parallel to the other rounds. 
+        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        venue: "Senior Computer Lab",
+        timing: 'The event will last for approximately 3 hours, without accounting for breaks. The first round will last for 30 minutes. The second round will last for an hour. The third round will last for an hour and thirty minutes. You will be allowed to work on questions from the previous round(s) and the Data Structure during the second and third rounds',
+        tps: 1,
+        participants: 2
     },
     {
         name: 'Presentation',
         liveVideo: '/cover-coding.mp4',
-        description: 'Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        teams: 16,
-        tps: 5,
-        players: 2,
-        venue: "Lorem Ipsum",
-        timing: '10:00 AM - 12:00 PM',
+        description: `This event tests participants\' abilities to program solutions to the presented problems using Python or JavaScript. The event will have three non-parallel
+        rounds which will test participants\' algorithmic abilities. In addition, there will be a Data Structure round which will run parallel to the other rounds. 
+        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        venue: "Senior Computer Lab",
+        timing: 'The event will last for approximately 3 hours, without accounting for breaks. The first round will last for 30 minutes. The second round will last for an hour. The third round will last for an hour and thirty minutes. You will be allowed to work on questions from the previous round(s) and the Data Structure during the second and third rounds',
+        tps: 1,
+        participants: 2
     }
 
     ]
@@ -91,36 +96,36 @@ const InfoSection = () => {
                                     </h2>
                                     <div className="info-section-each-modal-content-outer">
 
-                                    <div className="info-section-each-modal-content-inner">
-                                        <h3>
-                                            Rules
-                                        </h3>
+                                        <div className="info-section-each-modal-content-inner">
+                                            <h3>
+                                                Rules
+                                            </h3>
 
-                                        <ul className="info-section-modal-description">
+                                            <ul className="info-section-modal-description">
 
-                                            {a.description.split('.').map((a, index) => {
-                                                return <li key={index}>{a}</li>
-                                            })}
-                                        </ul>
-                                        <h3>
-                                            Timings
-                                        </h3>
-                                        <ul className="info-section-modal-description">
-                                            {a.timing.split('.').map((a, index) => {
-                                                return <li key={index}>{a}</li>
-                                            })}
-                                        </ul>
+                                                {a.description.split('.').map((a, index) => {
+                                                    return <li key={index}>{a}</li>
+                                                })}
+                                            </ul>
+                                            <h3>
+                                                Timings
+                                            </h3>
+                                            <ul className="info-section-modal-description">
+                                                {a.timing.split('.').map((a, index) => {
+                                                    return <li key={index}>{a}</li>
+                                                })}
+                                            </ul>
 
-                                        <tr><th><h3>Venue: </h3></th><td>{a.venue}</td></tr>
+                                            <tr><th><h3>Venue: </h3></th><td>{a.venue}</td></tr>
 
 
-                                        <div>
+                                            <div>
 
-                                            <tr><th>Players Per Team</th><td>{a.participants}</td></tr>
+                                                <tr><th>Players Per Team</th><td>{a.participants}</td></tr>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                    
+
                                     </div>
                                     <Link href={'/register/' + a.name.split(' ').map((a, index) => {
                                         console.log(a)
