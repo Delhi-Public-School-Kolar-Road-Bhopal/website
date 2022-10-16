@@ -18,4 +18,4 @@ const registrationSchema = new mongoose.Schema({
     }
 });
 
-export default mongoose.model('registration', registrationSchema);
+export default mongoose.models.registration || mongoose.model('registration', registrationSchema);

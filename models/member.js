@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const member = new mongoose.Schema({
+const memberSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true
@@ -15,4 +15,4 @@ const member = new mongoose.Schema({
     }
 });
 
-export default mongoose.model('member', memberSchema);
+export default mongoose.models.member || mongoose.model('member', memberSchema);

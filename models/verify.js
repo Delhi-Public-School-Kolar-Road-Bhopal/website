@@ -12,4 +12,4 @@ const verifySchema = new mongoose.Schema({
     }
 });
 
-export default mongoose.model('verify', verifySchema);
+export default mongoose.models.verify || mongoose.model('verify', verifySchema);
