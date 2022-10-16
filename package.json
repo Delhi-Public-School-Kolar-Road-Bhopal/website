@@ -10,14 +10,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.19.3",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.0.0",
+    "bcryptjs": "^2.4.3",
     "chai": "^4.3.6",
     "concurrently": "^7.2.2",
+    "jsonwebtoken": "^8.5.1",
     "karma": "^6.4.0",
     "karma-chai": "^0.1.0",
+    "mongoose": "^6.6.5",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

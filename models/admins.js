@@ -5,6 +5,10 @@ const adminSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    name:{
+        type:String,
+        required:true
+    },
     password: {
         type: String,
         required: true
@@ -16,4 +20,4 @@ const adminSchema = new mongoose.Schema({
     }
 });
 
-export default mongoose.model('admin', adminSchema);
+export default mongoose.models.admin || mongoose.model('admin', adminSchema);
