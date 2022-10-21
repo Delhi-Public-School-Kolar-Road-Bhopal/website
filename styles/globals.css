@@ -669,8 +669,9 @@ body {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.info-section-e:nth-child(3) {
-  grid-row-start: span 2;
+.info-section-e:nth-child(6) {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .info-section-e-cover {
   filter: blur(0.4rem);
