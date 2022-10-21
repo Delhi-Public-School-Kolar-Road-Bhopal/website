@@ -42,8 +42,8 @@ const Register = () => {
                 <div className="register-home-container">
                     {info.map((a, index) => {
                         console.log(a)
-                        return (<div>
-                            <Link href={a.link} key={index}>
+                        return (<div key={index}>
+                            <Link href={a.link} >
                                 <div className="info-section-e register-home-container-each">
                                     <video autoPlay muted loop src={a.liveVideo} className="info-section-e-cover" />
                                     <h3>
