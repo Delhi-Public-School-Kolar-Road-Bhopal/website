@@ -1,15 +1,13 @@
 
 const Venue = () => {
-    let m = { "Water Gate": "Lorem ipsum dolor sit amet, consect", "January 6th": "Lorem ipsum dolor sit amet, consect", "Water Gate": "Lorem ipsum dolor sit amet, consect", "January 16th": "Lorem ipsum dolor sit amet, consect", "Waterr Gate": "Lorem ipsum dolor sit amet, consect", "January 26th": "Lorem ipsum dolor sit amet, consect" };
+    let m = { "Offline events will be held on": "Monday, 14th November, 2022", "Online events will start on": "Friday, 11th November, 2022", "Results will be declared on": "Monday, 14th of November, 2022", "The registration deadline is": "Thursday, 10th of November, 2022", "The total monetary value of prizes that will be awarded across all 6 events is":"Over ₹10,000"};
     let keys = Object.keys(m);
     return (
         <div className="container">
             <div className="container-left">
-                {/* <h1>Lorem Ipsum</h1> */}
                 <div className="container-left-container">
                     {keys.map((a, index) => {
-
-                        return (<div className="container-left-each" key={index}><h3>{a}</h3><p>{m[a]}</p></div>)
+                        return (<div className="container-left-each" key={index}><p>{a}</p><h3>{m[a]}</h3></div>)
                     })}
                 </div>
             </div>

@@ -189,6 +189,7 @@
 
         p {
             font-size: 1.8rem;
+            margin: auto;
         }
 
         @include respond(phone) {

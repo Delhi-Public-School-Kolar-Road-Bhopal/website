@@ -16,19 +16,9 @@ const Header = (props) => {
         <div className="header-background">
 
         </div>
-        <div className='header-floater' onClick={() => {
-            window.scrollTo(0, 2000)
-        }}>
-            <div className='header-floater-1' />
-            <div className='header-floater-2' />
-            <div className='header-floater-3' />
-            <div className='header-floater-4' />
-            <div className='header-floater-5' />
-            <div className='header-floater-7' />
-            <div className='header-floater-8' />
-            <div className='header-floater-9' />
-        </div>
-    </div>)
+        
+    </div>
+    )
 }
 
 export default Header;
