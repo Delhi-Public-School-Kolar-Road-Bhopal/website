@@ -11,11 +11,6 @@ const Register = () => {
             {
                 name: "",
                 email: ""
-            },
-            {
-
-                name: "",
-                email: ""
             }
         ],
         teamName: "",
@@ -34,15 +29,14 @@ const Register = () => {
             <div className="register-body">
                 <form className="register-form" onSubmit={async (e) => {
                     e.preventDefault();
-                    if (state.members[0].name === "" || state.members[0].email === "" || state.members[1].name === "" || state.members[1].email === "" || state.teamName === "" || state.school === "") {
+                    if (state.members[0].name === "" || state.members[0].email === "") {
                         setError("All fields are required");
                         return
                     }
-                    if (!emailValidator(state.members[0].email) || !emailValidator(state.members[1].email)) {
+                    if (!emailValidator(state.members[0].email)) {
                         setError("Invalid email");
                         return
                     }
-
                     setError("");
                     try {
                         let r = register(state);

@@ -29,8 +29,8 @@ const Registration = () => {
             <h4>Event: {state.data.registration.event}</h4>
             <h4>Members</h4>
             <div className='registration-data-members'>
-                {state.data.members.map(a => {
-                    return (<div className='registration-data-members-each'>
+                {state.data.members.map((a, index) => {
+                    return (<div key={index} className='registration-data-members-each'>
 
                         <p>{a.name}</p>
 
