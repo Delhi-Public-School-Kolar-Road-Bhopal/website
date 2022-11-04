@@ -16,7 +16,7 @@ const organizers = [{
     core: true,
     designation: "Core Organizer",
     profile: 'Angad is ambitious, compassionate and creative. He was one of the first members who helped in making the event a great success. He has participated in many online game designing and coding events. He has developed many games and arduino projects.  He has a eye for perfecion. He bagged first prize in movie making and got second prize in inter-national gaming compitition. He likes to read books and novels. He is the Head boy of DPS Kolar student council. In his spare time you will find him eating food while working on his computer. Currently pursuing a High School Diploma focused in PCM + IP from Delhi Public School, Kolar Road, Bhopal. He wants to become a game designer and developer. Angad wants to play for a professtional E-sports team. He likes to cook and spend time with friends.',
-    image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+    image: "/Angad.jpeg"
 },
 {
     name: 'Shreshth Verma',
@@ -33,7 +33,24 @@ const organizers = [{
     volunteer: true,
     designation: "Member of the Compering Team",
     profile: `He is an over-thinker. He makes small models in Blender and Studio and animates a little. He works for a few games online. He likes meeting new people. I sing online as well on my Instagram profile. Thank you.`,
-    image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+    image: "/Advay.jpeg"
+},
+
+{
+    name: "Dhairya Garg",
+    core: false,
+    volunteer: false,
+    designation: "Scio and Team Leader of Site Incroyable",
+    profile: "Dhairya is a quiz-zard and a programmer through and through. Being curious, reliable and keen individual, Dhairya has an analytical and rational mind.",
+    image: "/Dhairya.jpeg"
+},
+{
+    name:"Rishabh Kothari",
+    core:false, 
+    volunteer: false,
+    image: "https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    designation: "Team leader of Scio",
+    profile:"Inquizitive and pragmatic, i have participated in many inter school quizzes and cryptic hunts"
 },
 {
     name: 'Aarush Shrivastava',
@@ -41,8 +58,17 @@ const organizers = [{
     volunteer: false,
     designation: "Scio",
     profile: `Aarush is studious, motivated, and very energetic. He likes to play chess and badminton. He is the house captain of Gulmohar house for classes 6th to 8th. `,
-    image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+    image: "/Aarush.jpeg"
 },
+{
+    name: "Purunjay Pratap Singh",
+    core: false,
+    volunteer: false,
+    designation: "Parabellum",
+    profile: "I'm that person you will want to be friends with. I am a memer, gamer, e-sports player and graphic designer. I love to bring positivity and joy to the world through art, design and e-sports.",
+    image: '/Purunjay.jpeg'
+},
+
 ]
 const About = () => {
     return (<div className="about">
