@@ -45,12 +45,12 @@ const organizers = [{
     image: "/Dhairya.jpeg"
 },
 {
-    name:"Rishabh Kothari",
-    core:false, 
+    name: "Rishabh Kothari",
+    core: false,
     volunteer: false,
     image: "https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     designation: "Team leader of Scio",
-    profile:"Inquizitive and pragmatic, i have participated in many inter school quizzes and cryptic hunts"
+    profile: "Inquizitive and pragmatic, i have participated in many inter school quizzes and cryptic hunts"
 },
 {
     name: 'Aarush Shrivastava',
@@ -69,13 +69,23 @@ const organizers = [{
     image: '/Purunjay.jpeg'
 },
 {
-    name:"Om Pratap Dhaker",
-    core:false,
-    volunteer: false, 
-    designation:'Site Incroyable',
-    image:"/om.jpeg",
-    profile:"I am a brother, son and a Programmer. I love cars, my dream car is the car in the image AKA Nissan GTR R-34 Z-Tune. I convert my coffee to code"
-}
+    name: "Buddha Dev Das",
+    core: false,
+    volunteer: false,
+    designation: "Team leader of Parabellum",
+    profile: "Buddha is an esports player and a tech enthusiast. He is a 10th grader who wants to be a pro esports athlete in the future. He also has side hobbies which include playing the guitar, footballer for his school team and does lifting aswell. He assures his total dedication in making this event a joyful one for every participant.",
+    image: "/Buddha.jpeg"
+},
+{
+    name: "Om Pratap Dhaker",
+    core: false,
+    volunteer: false,
+    designation: 'Site Incroyable',
+    image: "/om.jpeg",
+    profile: `I am a programmer who is constantly trying to improve his skills. I am one of the prominent feather in the DPS Kolar's cap. I am a huge car fan who is basically obsessed with the JDMs'. Lastly, "I am the one who converts coffee to code".
+    `
+},
+
 ]
 const About = () => {
     return (<div className="about">

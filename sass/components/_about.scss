@@ -47,7 +47,7 @@
 
     &-organizers {
         display: grid;
-
+        align-items: flex-start;
         &-sub {
             @media (max-width: 1500px) {
                 grid-template-columns: repeat(4, 1fr);

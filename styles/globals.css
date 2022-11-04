@@ -1123,6 +1123,7 @@ body {
 }
 .about-organizers {
   display: grid;
+  align-items: flex-start;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 3rem;
 }
