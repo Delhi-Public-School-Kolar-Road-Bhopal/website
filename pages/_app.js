@@ -19,7 +19,9 @@ function MyApp({ Component, pageProps }) {
         DPS Kolar Road has taken an initiative to contribute to this field. Extraquadrata would be our very first annual tech meet up hosted by and for high schoolers which will be held on the 14th of November.
         Our competitions would test the participant’s creativity and logical thinking to response time and sheer skill for tech savvies and people who crave to be."></meta>
     </Head>
+    <div style={{minHeight:'80vh'}}>
   <Component {...pageProps} />
+  </div>
   <Footer /></>
 }
 
