@@ -52,10 +52,10 @@ const organizers = [{
 },
 {
     name: "Anirudh Nagarajan",
-    profile:"I am a person who is reliable. I have a keen interest in almost everything and love to know more every time. I like solving problems and love challenges. One of my biggest goals has remained of being trustworthy and a good person. I am known for helping people and also do said help in the best way I can.",
-    core:false, 
+    profile: "I am a person who is reliable. I have a keen interest in almost everything and love to know more every time. I like solving problems and love challenges. One of my biggest goals has remained of being trustworthy and a good person. I am known for helping people and also do said help in the best way I can.",
+    core: false,
     volunteer: false,
-    image:"/Anirudh.jpeg",
+    image: "/Anirudh.jpeg",
     designation: "Member of the Esprit Decode team and the president of the student council",
 },
 {
@@ -91,6 +91,23 @@ const organizers = [{
     profile: `I am a programmer who is constantly trying to improve his skills. I am one of the prominent feather in the DPS Kolar's cap. I am a huge car fan who is basically obsessed with the JDMs'. Lastly, "I am the one who converts coffee to code".
     `
 },
+{
+    name: "Aarya Sharma",
+    core: false,
+    volunteer: false,
+    designation: "Member of the Filmskaping team",
+    image: '/Aarya.jpeg',
+    profile: `Aarya Sharma is ambitious, extremely hard working, reliable, and has good oratory skills. She is immensely passionate about dancing and is a state level volleyball player. She is also a good student with interests in poetry , philosophy, etc.`
+},
+{
+    name: "Misha Baniya",
+    core: false,
+    span2:true,
+    volunteer: true,
+    designation: "Member of the Compering Team",
+    image: "/Misha.jpeg",
+    profile: 'From debates to basketball and everything in between you will have her participating in all of them. From reading countless books in the comfort of her room to being the host of larger than life-scale events, she does it all. Its her open minded thoughts and the willingness to learn that makes Misha who she is. An orator and (wanna be) journalist who loves to voice and write her opinions about everything and anything as she runs on caffeine. She will interject you in forums, compete with you on the basketball court, but throughout it all she will be a dear friend, and confidant. Spending her days striving for all-around excellence and snuggling up to her four pet dogs is her daily routine that she fills in. She explores around in hopes to get better, kinder, knowledgeable, and funnier. All thing food and all thing music, from sarcasm to PJs, she tries to have it all.'
+}
 
 ]
 const About = () => {
@@ -148,11 +165,11 @@ const About = () => {
                 })}
             </div>
 
-            <h3 className="about-header">Compering Team and the Volunteers </h3>
+            <h3 className="about-header">Compering Team</h3>
             <div className='about-organizers-sub about-organizers'>
                 {organizers.filter(a => a.volunteer).map((organizer, index) => {
 
-                    return (<div className='about-organizers-each' key={index}>
+                    return (<div className='about-organizers-each' style={organizer.span2?{ gridColumnStart: 'span 2' }:null} key={index}>
 
                         <div className='about-organizers-each-center'> <img className='about-organizers-each-image-center' src={organizer.image} alt={organizer.name + "picture"} />
                         </div>
