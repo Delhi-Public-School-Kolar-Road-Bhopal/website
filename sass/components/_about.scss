@@ -65,7 +65,9 @@
                 grid-column-start: 1 !important;
                 // align-items: flex-start;
             }
-
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             &-designation {
                 display: flex;
                 align-items: center;
@@ -119,7 +121,10 @@
 
             &-header {
                 padding: 2rem;
-                // display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                display: flex;
                 // align-items: center;
             }
 

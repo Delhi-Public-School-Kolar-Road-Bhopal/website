@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+    /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
 const organizers = [{
@@ -28,7 +28,7 @@ const organizers = [{
     name: 'Shreshth Verma',
     designation: "Core Organizer",
 
-    profile: 'A perpetual student, an entrepreneur, and an Experienced Full Stack Developer with a demonstrated history of working in the industry. Skilled in HTML, Front-end Development, Cascading Style Sheets (CSS), MongoDB, Node.js, Express.js, React, and JavaScript. Currently pursuing a High School Diploma focused in PCM + IP from Delhi Public School, Kolar Road, Bhopal.Despite being in grade 12th, Shreshth has extensive work experience  as a full stack developer: he worked at a MNC for over an year and at a small business for nearly 4 months, as a MERN Stack + blockchain developer. Shreshth is the cyberdirector of the DPS Kolar student council and the president of the technoclub. He conceptualized the key idea behind the Extra Quadrata tech fest. ',
+    profile: 'A perpetual student, an entrepreneur, and an Experienced Full Stack Developer with a demonstrated history of working in the industry. Skilled in HTML, Front-end Development, Cascading Style Sheets (CSS), MongoDB, Node.js, Express.js, React, and JavaScript. Currently pursuing a High School Diploma focused in PCM + IP from Delhi Public School, Kolar Road, Bhopal.Despite being in grade 12th, Shreshth has extensive work experience  as a full stack developer: he worked at a MNC for over an year and at a small business for nearly 4 months, as a MERN Stack + blockchain developer. Shreshth is the cyberdirector of the DPS Kolar student council and the president of the technoclub. He conceptualized the key idea behind the Extra Quadrata tech fest. Shreshth is currently working with queer-teens India, an organization that seeks to abate discrimination and social isolation in the Indian queer community',
     core:true,
     image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
 

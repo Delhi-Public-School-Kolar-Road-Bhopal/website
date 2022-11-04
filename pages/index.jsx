@@ -11,7 +11,7 @@ const Home = () => {
       description={`We are invigorated and thrilled to announce that our school, DPS Kolar, is hosting the Extra Quadrata Tech Fest on the 14th of November. Our event encompasses a diverse array of sub-events, ranging from gaming to programming.`}
       video={{ src: '/cover.mp4' }} />
     <Venue />
-    <InfoSection />
+    <InfoSection /> 
     <Register />
   </div>
   )
