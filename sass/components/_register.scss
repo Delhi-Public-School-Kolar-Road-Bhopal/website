@@ -123,6 +123,33 @@
         height: 100%;
     }
 
+    &-dropdown div {
+        padding:2rem;
+        width: calc(100% - 4rem) !important;
+        border-bottom: 1px solid #000000;
+        cursor: pointer;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    &-dropdown {
+        background-color: #fff;
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);
+        border-radius: .76rem;
+        padding: 2rem;
+        left: 0;
+
+        z-index: 4;
+        cursor: pointer;
+        bottom: 0;
+        transform: translate(0, 100%);
+        width: calc(100% - 4rem) !important;
+        overflow: auto;
+        height: 20rem;
+        position: absolute;
+    }
+
     &-form {
         width: calc(100% - 10rem);
         max-width: 100rem;
@@ -183,9 +210,11 @@
         }
 
 
-        input {
+        input,
+        .input {
             padding: 2rem 1rem;
             outline: none;
+            position: relative;
             font-size: 1.8rem;
             border: none;
             box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);

@@ -27,6 +27,11 @@ const Register = () => {
                                 <p>Participant {a}'s Email</p>
                                 <input type="text" placeholder={`Participant ${a}'s Email`} />
                             </div>
+                            <div className="register-input">
+                                <p>Participant {a}'s Class</p>
+                                <input type="text" placeholder={`Participant ${a}'s Class`} />
+                            </div>
+                            <span/>
                         </>)
 
                     })}

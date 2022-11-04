@@ -76,10 +76,10 @@ const InfoSection = () => {
         The top 6 teams on the basis of preliminary marks would qualify for the main quiz.
         In case there is a tie, rules for the tie breaker would be announced on spot.
         The quizmaster’s decision would be final and binding.
-        It is recommended at least one student should be from 8th grade
+        Participants to prepare current affairs and general awareness related to IT, history of companies and  their products.
         The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
-        venue: "Magnun Opus",
-        timing: 'The event will last for approximately 3 hours,',
+        venue: "Magnum Opus",
+        timing: 'The event will last for approximately 3 hours',
         tps: 1,
         participants: 2
     },

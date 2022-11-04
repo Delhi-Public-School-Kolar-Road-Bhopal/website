@@ -4,7 +4,7 @@ const Register = () => {
     return (
         <div className="register">
             <div className="register-header">
-                <h1>Register for Film Scaping</h1>
+                <h1>Register for Filmskaping</h1>
                 <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             <div className="register-body">

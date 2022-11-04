@@ -25,9 +25,9 @@ const info = [{
     link: 'register/scio'
 },
 {
-    name: 'Filmscaping',
+    name: 'Filmskaping',
     liveVideo: '/cover-cryptic.mp4',
-    link: 'register/filmscaping'
+    link: 'register/filmskaping'
 }]
 const Register = () => {
     console.log(info);

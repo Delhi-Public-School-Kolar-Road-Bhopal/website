@@ -2,10 +2,14 @@
 import React from 'react';
 
 const organizers = [{
-    name: 'Anirudh Nagrajan',
-    designation: "Core Organizer",
-    profile: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+    name: 'Aadya Singh',
+    core: true,
+    designation: "Language Marshal",
+    contactNumber: '+91 70002 36817',
+    email: "",
+    profile: 'Aadya is known for doing absolutely everything they can get their hands on, this is reflected in their portfolio. They’ve collaborated with multiple youth run non-profits to spread awareness as well as crowdfund. They’ve managed the social media page for a local renowned handicraft store. They are a published poet that’s always looking for an excuse to bring it up in a conversation.They are a self starter with the experience of organising multiple experiences.In their spare time you can find them snuggled in a corner with their cats reading Donna Tartt or some obscure contemporary poet. A sure way to get them to pay attention to you would be to start a debate on acrylic v. oil paint. They are the most approachable of the bunch(you are encouraged to reach out to them for absolutely anything you need or want). Their love for all things cheesy and sappy overwhelms their work.',
+
+    image: "/Spencer.jpg"
 },
 {
     name: 'Angad Singh Bains',
@@ -107,17 +111,20 @@ const About = () => {
             </p>
             <h3 className="about-header">Core Organizers</h3>
             <div className='about-organizers'>
-                {organizers.filter(a => a.designation === "Core Organizer").map((organizer, index) => {
+                {organizers.filter(a => a.core).map((organizer, index) => {
 
-                    return (<div className='about-organizers-each' style={organizer.designation === "Core Organizer" ? { gridColumnStart: 'span 2' } : null} key={index}>
-
-                        <img className='about-organizers-each-image' src={organizer.image} alt={organizer.name + "picture"} />
+                    return (<div className='about-organizers-each' style={{ gridColumnStart: 'span 2' }} key={index}>
                         <div className='about-organizers-each-header'>
 
                             <p className='about-organizers-each-profile'>{organizer.profile}</p>
-                            <h4 className='about-organizers-each-name'>{organizer.name}</h4>
+                            <div className='about-organizers-each-designation'>
 
-                            <p className='about-organizers-each-profile'>{organizer.designation}</p>
+                                <img className='about-organizers-each-image' src={organizer.image} alt={organizer.name + "picture"} />
+                                <div>
+                                    <h4 className='about-organizers-each-name'>{organizer.name}</h4>
+                                    <p className='about-organizers-each-profile'>{organizer.designation}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>)
                 })}
@@ -129,7 +136,8 @@ const About = () => {
 
                     return (<div className='about-organizers-each' style={organizer.designation === "Core Organizer" ? { gridColumnStart: 'span 2' } : null} key={index}>
 
-                        <img className='about-organizers-each-image' src={organizer.image} alt={organizer.name + "picture"} />
+                        <div className='about-organizers-each-center'> <img className='about-organizers-each-image-center' src={organizer.image} alt={organizer.name + "picture"} />
+                        </div>
                         <div className='about-organizers-each-header'>
 
                             <p className='about-organizers-each-profile'>{organizer.profile}</p>

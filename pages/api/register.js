@@ -73,14 +73,14 @@ const Handler = async (req, res) => {
                     })
             }
             for (let i = 0; i < members.length; i++) {
-                // let exist = await Member.findOne({
-                //     email: members[i].email
-                // });
-                // if (exist) {
-                //     return res.status(400).json({
-                //         message: `${members[i].email} is already registered`
-                //     });
-                // }
+                let exist = await Member.findOne({
+                    email: members[i].email
+                });
+                if (exist) {
+                    return res.status(400).json({
+                        error: `${members[i].email} is already registered`
+                    });
+                }
             }
             let mems = [];
 
@@ -118,7 +118,7 @@ const Handler = async (req, res) => {
                 await checkRegistration(member, registration._id, event, verified.code);
             }
             return res.status(200).json({
-                message: 'Team registered'
+                error: 'Team registered'
             });
         }
     }

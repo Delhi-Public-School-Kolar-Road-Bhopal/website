@@ -8,6 +8,7 @@ const handler = async (req, res) => {
     try {
         await connect();
 
+
         if (req.method === "POST") {
             const {
                 email,
@@ -17,6 +18,7 @@ const handler = async (req, res) => {
             const exists = await admins.findOne({
                 email: email
             });
+            
             if (exists) {
                 return res.status(401).json({
                     error: "Admin Already Exists"

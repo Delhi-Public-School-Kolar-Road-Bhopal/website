@@ -2,7 +2,7 @@ import { Link } from 'next';
 const Navbar = () => {
     return (<div className='navbar'>
         <div className='navbar-logo'>
-
+    
         </div>
         <div className='navbar-links'>
             <Link>

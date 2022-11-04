@@ -12,8 +12,7 @@ const mailJet = new MailJet({
 
 
 export const verifyEmail = async (member, id, e) => {
-
-    const email = mailJet
+    const email =await mailJet
         .post("send", {
             version: "v3.1"
         })
@@ -32,7 +31,6 @@ export const verifyEmail = async (member, id, e) => {
                 HTMLPart: verify(member, e, `${process.env.ADDRESS}/verify/${id}`, `${process.env.ADDRESS}/remove/${id}`)
             }, ],
         });
-    await email;
 }
 
 export const checkRegistration = async (member, registration, e, id) => {
