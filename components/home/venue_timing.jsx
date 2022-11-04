@@ -1,6 +1,6 @@
 
 const Venue = () => {
-    let m = { "Offline events will be held on": "Monday, 14th November, 2022", "Online events will start on": "Friday, 11th November, 2022", "Results will be declared on": "Monday, 14th of November, 2022", "The registration deadline is": "Thursday, 10th of November, 2022", "The total monetary value of prizes that will be awarded across all 6 events is":"Over ₹10,000"};
+    let m = { "Offline events will be held on": "Wednesday, 16th November, 2022", "Online events will start on": "Sunday, 13th November, 2022", "Results will be declared on": "Wednesday, 16th of November, 2022", "The registration deadline is": "Saturday, 12th of November, 2022", "The total monetary value of prizes that will be awarded across all 6 events is":"Over ₹10,000"};
     let keys = Object.keys(m);
     return (
         <div className="container">
