@@ -1,6 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import emailValidator from '../../utils/emailValidator';
+import listOfSchools from '../../utils/listOfSchools';
+import register from '../../utils/register';
 const Register = () => {
+    const [state, setState] = React.useState({
+        event: "Site Incroyable",
+        school: "",
+        members: [
+            {
+                name: "",
+                email: ""
+            },
+            {
+
+                name: "",
+                email: ""
+            }
+        ],
+        teamName: "",
+        submitted:false
+    });
+    const [error, setError] = React.useState("");
+    const [success, setSuccess] = React.useState("");
+    const [dropdown, setDropdown] = React.useState(false);
     return (
         <div className="register">
             <div className="register-header">
@@ -8,33 +31,80 @@ const Register = () => {
                 <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             <div className="register-body">
-                <form className="register-form">
+                <form className="register-form" onSubmit={async (e) => {
+                    e.preventDefault();
+                    if (state.members[0].name === "" || state.members[0].email === "" || state.members[1].name === "" || state.members[1].email === "" || state.teamName === "" || state.school === "") {
+                        setError("All fields are required");
+                        return
+                    }
+                    if (!emailValidator(state.members[0].email) || !emailValidator(state.members[1].email)) {
+                        setError("Invalid email");
+                        return
+                    }
+
+                    setError("");
+                    try {
+                        let r = register(state);
+                        setState(state => ({ ...state, submitted: true }));
+                        setSuccess("Registered successfully! Please check your emails for further instructions.");
+                    }
+                    catch (e) {
+                        setError(e);
+                    }
+
+                }}>
                     <div className="register-input">
                         <p>School Name</p>
-                        <input type="text" placeholder="School Name" />
+                        <div type="text" className='input' onClick={() => {
+                            if (!state.submitted) {
+                                setDropdown(!dropdown);
+                            }
+                        }}>
+                            {state.school.length > 0 ? state.school : "School Name"}
+                            {dropdown ? <div className='register-dropdown'>
+                                {listOfSchools.map((a, i) => {
+                                    return <div onClick={() => {
+                                        setState({
+                                            ...state,
+                                            school: a
+                                        });
+                                        setDropdown(false);
+                                    }} key={i}>{a}</div>
+                                })}
+                            </div> : null}
+                        </div>
+
                     </div>
                     <div className="register-input">
                         <p>Team Name</p>
-                        <input type="text" placeholder="Team Name" />
+                        <input disabled={state.submitted} value={state.teamName} onChange={(e) => setState(state => ({ ...state, teamName: e.target.value }))} type="text" placeholder="Team Name" />
                     </div>
-                    {[1, 2].map(a => {
+                    {[1, 2].map((a, i) => {
                         return (<>
                             <div className="register-input">
                                 <p>Participant {a}'s Name</p>
-                                <input type="text" placeholder={`Participant ${a}'s Name`} />
+                                <input disabled={state.submitted} value={state.members[i].name} onChange={(e) => {
+                                    let members = state.members;
+                                    members[i].name = e.target.value;
+                                    setState(state => ({ ...state, members }));
+                                }} type="text" placeholder={`Participant ${a}'s Name`} />
                             </div>
                             <div className="register-input">
                                 <p>Participant {a}'s Email</p>
-                                <input type="text" placeholder={`Participant ${a}'s Email`} />
+                                <input disabled={state.submitted} type="email" value={state.members[i].email} onChange={(e) => {
+                                    let members = state.members;
+                                    members[i].email = e.target.value;
+                                    setState(state => ({ ...state, members }));
+                                }} placeholder={`Participant ${a}'s Email`} />
                             </div>
                         </>)
 
                     })}
-              
 
                     <button className="register-button">Register</button>
                 </form>
-
+                <p>{error}</p>
+                <p>{success}</p>
             </div>
 
         </div >

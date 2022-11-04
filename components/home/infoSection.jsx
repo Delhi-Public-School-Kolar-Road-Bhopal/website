@@ -15,7 +15,7 @@ const InfoSection = () => {
 
     },
     {
-        name: 'Foto Perfecta',
+        name: 'Photo Perfecta',
         liveVideo: '/cover-photography.mp4',
         description: `This is an online event.
         This is an individual event.
@@ -25,11 +25,11 @@ const InfoSection = () => {
         Participants need to provide the EXIF details along with each of their entries.
         Manipulation is not allowed, but basic post-processing such as exposure correction, contrast adjustments, and color enhancement is allowed.
         Removal of any object from the photograph is strictly prohibited.
-        Participants have to upload their original work only.
+        Participants have to upload their original work only
 
         `,
         venue: "Online",
-        timing: 'The participants will be given one week to submit their photographs. The last date for submission is 3rd November 2022.',
+        timing: 'The participants will be given one week to submit their photographs. The last date for submission is 3rd November 2022',
         tps: 2,
         participants: 1
     },
@@ -64,7 +64,7 @@ const InfoSection = () => {
 
         The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
         venue: "Junior Computer Lab",
-        timing: 'The event will last for approximately 3 hours, without accounting for breaks.',
+        timing: 'The event will last for approximately 3 hours, without accounting for breaks',
         tps: 1,
         participants: 2
     },
@@ -90,11 +90,11 @@ const InfoSection = () => {
         The website could be made using REACT, Angular, Vue, or vanilla HTML + JS/TS + CSS.
         for using any additional frameworks or libraries, permission from the organizing team will be required.
         The topic of the event will be mentioned on the spot.
-        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies.
+        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies
        
         `,
         venue: "Middle Computer Lab",
-        timing: 'The event will last for approximately 4 hours.',
+        timing: 'The event will last for approximately 4 hours',
         tps: 1,
         participants: 2
     }

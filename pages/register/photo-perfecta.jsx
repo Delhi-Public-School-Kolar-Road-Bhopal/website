@@ -3,10 +3,9 @@ import React from 'react';
 import emailValidator from '../../utils/emailValidator';
 import listOfSchools from '../../utils/listOfSchools';
 import register from '../../utils/register';
-
 const Register = () => {
     const [state, setState] = React.useState({
-        event: "Esprit Decode",
+        event: "Photo Perfecta",
         school: "",
         members: [
             {
@@ -20,16 +19,16 @@ const Register = () => {
             }
         ],
         teamName: "",
-        submitted: false
+        submitted:false
     });
     const [error, setError] = React.useState("");
-
+    
     const [success, setSuccess] = React.useState("");
     const [dropdown, setDropdown] = React.useState(false);
     return (
         <div className="register">
             <div className="register-header">
-                <h1>Register for Esprit Decode</h1>
+                <h1>Register for Photo Perfecta</h1>
                 <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             <div className="register-body">
