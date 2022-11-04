@@ -5,7 +5,7 @@ import Footer from '../components/home/footer'
 function MyApp({ Component, pageProps }) {
   return <>
      <Head>
-      <title>DPS Kolar Tech Fest</title>
+      <title>Extra Quadrata Tech Fest</title>
       <meta name="robots" content="all" />
       <meta name='description'
         content="“Technology like art is a soaring exercise of the human imagination.” To be steady with our motion of development, it is vital for the youth to grasp every facet of technology and innovation.
