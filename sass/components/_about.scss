@@ -44,10 +44,15 @@
     }
 
 
-
+    
     &-organizers {
         display: grid;
-
+        &-sub{
+            @media (max-width: 1500px){
+                grid-template-columns: repeat(4, 1fr);
+                
+            }
+        }
         @include respond(tablet) {
             grid-template-columns: repeat(2, 1fr);
         }

@@ -1103,6 +1103,11 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 3rem;
 }
+@media (max-width: 1500px) {
+  .about-organizers-sub {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media (max-width: 768px) {
   .about-organizers {
     grid-template-columns: repeat(2, 1fr);
