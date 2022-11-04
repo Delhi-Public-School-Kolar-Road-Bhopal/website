@@ -148,7 +148,7 @@ const About = () => {
                 })}
             </div>
 
-            <h3 className="about-header">Volunteers</h3>
+            <h3 className="about-header">Compering Team and the Volunteers </h3>
             <div className='about-organizers-sub about-organizers'>
                 {organizers.filter(a => a.volunteer).map((organizer, index) => {
 
