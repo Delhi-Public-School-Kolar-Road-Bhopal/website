@@ -20,12 +20,10 @@ const organizers = [{
 },
 {
     name: 'Shreshth Verma',
-    designation: "Core Organizer",
-
+    designation: "President of the Technoclub and the ",
     profile: 'A perpetual student, an entrepreneur, and an Experienced Full Stack Developer with a demonstrated history of working in the industry. Skilled in HTML, Front-end Development, Cascading Style Sheets (CSS), MongoDB, Node.js, Express.js, React, and JavaScript. Currently pursuing a High School Diploma focused in PCM + IP from Delhi Public School, Kolar Road, Bhopal.Despite being in grade 12th, Shreshth has extensive work experience  as a full stack developer: he worked at a MNC for over an year and at a small business for nearly 4 months, as a MERN Stack + blockchain developer. Shreshth is the cyberdirector of the DPS Kolar student council and the president of the technoclub. He conceptualized the key idea behind the Extra Quadrata tech fest. Shreshth is currently working with queer-teens India, an organization that seeks to abate discrimination and social isolation in the Indian queer community',
     core: true,
     image: "/shreshth.jfif"
-
 },
 {
     name: 'Advay Singh Yadav',
@@ -53,12 +51,20 @@ const organizers = [{
     profile: "Inquizitive and pragmatic, he has participated in many inter school quizzes and cryptic hunts"
 },
 {
+    name: "Anirudh Nagarajan",
+    profile:"I am a person who is reliable. I have a keen interest in almost everything and love to know more every time. I like solving problems and love challenges. One of my biggest goals has remained of being trustworthy and a good person. I am known for helping people and also do said help in the best way I can.",
+    core:false, 
+    volunteer: false,
+    image:"/Anirudh.jpeg",
+    designation: "Member of the Esprit Decode team and the president of the student council",
+},
+{
     name: 'Aarush Shrivastava',
     core: false,
     volunteer: false,
     designation: "Scio",
     profile: `Aarush is studious, motivated, and very energetic. He likes to play chess and badminton. He is the house captain of Gulmohar house for classes 6th to 8th. `,
-    image: "/Aarush.jpeg"
+    image: "/Aarush.jpg"
 },
 {
     name: "Purunjay Pratap Singh",
