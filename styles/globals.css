@@ -459,7 +459,7 @@ body {
   }
 }
 .register-home-container {
-  height: calc(100% - 20rem);
+  min-height: calc(100% - 20rem);
   grid-gap: 2rem;
   width: 100%;
   overflow: auto;
@@ -475,6 +475,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media (max-height: 1000px) {
+  .register-home-container-each {
+    height: 10rem !important;
+  }
 }
 .register-home-container-each h3 {
   font-size: 3rem !important;
