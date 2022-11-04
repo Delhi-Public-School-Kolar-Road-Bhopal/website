@@ -68,7 +68,14 @@ const organizers = [{
     profile: "I'm that person you will want to be friends with. I am a memer, gamer, e-sports player and graphic designer. I love to bring positivity and joy to the world through art, design and e-sports.",
     image: '/Purunjay.jpeg'
 },
-
+{
+    name:"Om Pratap Dhaker",
+    core:false,
+    volunteer: false, 
+    designation:'Site Incroyable',
+    image:"/Om.png",
+    profile:"I am a brother, son and a Programmer. I love cars, my dream car is the car in the image AKA Nissan GTR R-34 Z-Tune. I convert my coffee to code"
+}
 ]
 const About = () => {
     return (<div className="about">
