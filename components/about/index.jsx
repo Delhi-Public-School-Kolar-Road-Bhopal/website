@@ -15,7 +15,7 @@ const organizers = [{
     name: 'Angad Singh Bains',
     core: true,
     designation: "Core Organizer",
-    profile: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    profile: 'Angad is ambitious, compassionate and creative. He was one of the first members who helped in making the event a great success. He has participated in many online game designing and coding events. He has a eye for perfecion. He bagged first prize movie making and second prize in inter-national gaming compitition. He is also the Head boy of DPS Kolar student council . In his spare time you will find him eating food while working on his computer. He likes to cook and spend time with friends.',
     image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
 },
 {
