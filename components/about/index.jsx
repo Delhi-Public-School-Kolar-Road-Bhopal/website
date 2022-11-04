@@ -14,13 +14,13 @@ const organizers = [{
 {
     name: 'Angad Singh Bains',
     core: true,
-    designation: "Core Organizer",
+    designation: "Head Boy",
     profile: 'Angad is ambitious, compassionate and creative. He was one of the first members who helped in making the event a great success. He has participated in many online game designing and coding events. He has developed many games and arduino projects.  He has a eye for perfecion. He bagged first prize in movie making and got second prize in inter-national gaming compitition. He likes to read books and novels. He is the Head boy of DPS Kolar student council. In his spare time you will find him eating food while working on his computer. Currently pursuing a High School Diploma focused in PCM + IP from Delhi Public School, Kolar Road, Bhopal. He wants to become a game designer and developer. Angad wants to play for a professtional E-sports team. He likes to cook and spend time with friends.',
     image: "/Angad.jpeg"
 },
 {
     name: 'Shreshth Verma',
-    designation: "President of the Technoclub and the ",
+    designation: "President of the Technoclub and the Senior Cyber Director of the Student Council",
     profile: 'A perpetual student, an entrepreneur, and an Experienced Full Stack Developer with a demonstrated history of working in the industry. Skilled in HTML, Front-end Development, Cascading Style Sheets (CSS), MongoDB, Node.js, Express.js, React, and JavaScript. Currently pursuing a High School Diploma focused in PCM + IP from Delhi Public School, Kolar Road, Bhopal.Despite being in grade 12th, Shreshth has extensive work experience  as a full stack developer: he worked at a MNC for over an year and at a small business for nearly 4 months, as a MERN Stack + blockchain developer. Shreshth is the cyberdirector of the DPS Kolar student council and the president of the technoclub. He conceptualized the key idea behind the Extra Quadrata tech fest. Shreshth is currently working with queer-teens India, an organization that seeks to abate discrimination and social isolation in the Indian queer community',
     core: true,
     image: "/shreshth.jfif"
