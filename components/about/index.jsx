@@ -40,7 +40,7 @@ const organizers = [{
     name: "Dhairya Garg",
     core: false,
     volunteer: false,
-    designation: "Scio and Team Leader of Site Incroyable",
+    designation: "Scio and Co-Team Leader of Site Incroyable",
     profile: "Dhairya is a quiz-zard and a programmer through and through. Being curious, reliable and keen individual, Dhairya has an analytical and rational mind.",
     image: "/Dhairya.jpeg"
 },
@@ -80,7 +80,7 @@ const organizers = [{
     name: "Om Pratap Dhaker",
     core: false,
     volunteer: false,
-    designation: 'Site Incroyable',
+    designation: 'Co-Team Leader of Site Incroyable',
     image: "/om.jpeg",
     profile: `I am a programmer who is constantly trying to improve his skills. I am one of the prominent feather in the DPS Kolar's cap. I am a huge car fan who is basically obsessed with the JDMs'. Lastly, "I am the one who converts coffee to code".
     `
