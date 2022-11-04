@@ -5,11 +5,17 @@ const Register = () => {
         name: '',
         email: '',
         message: '',
-        submitted: false
+        submitted: false,
+        error:""
     })
     const onSubmit = async (e) => {
         try {
             e.preventDefault()
+            if(!state.name>0 || !state.email>0 || !state.message>0){
+                setState(state=> ({ ...state, error:"Please fill all the fields"}))
+                return;
+            }
+            
             await axios.post('/api/contact', state)
             setState(state=>({...state, submitted: true}))
         }
@@ -28,13 +34,13 @@ const Register = () => {
                     <form onSubmit={onSubmit} className="register-form">
                         <div className="register-input">
                             <p>Name</p>
-                            <input disabled={state.submitted} value={state.name} onChange={(e) => {
+                            <input required={true} disabled={state.submitted} value={state.name} onChange={(e) => {
                                 setState({ ...state, name: e.target.value });
                             }} type="text" placeholder="Name" />
                         </div>
                         <div className="register-input">
                             <p>Email</p>
-                            <input disabled={state.submitted} onChange={(e) => {
+                            <input required={true} disabled={state.submitted} onChange={(e) => {
                                 setState({ ...state, email: e.target.value });
                             }} type="email" value={state.email} placeholder="Email@website.com" />
                         </div>
@@ -42,7 +48,7 @@ const Register = () => {
                             <p>Message</p>
                             <div className="register-input-textarea">
 
-                                <textarea disabled={state.submitted} onChange={(e) => {
+                                <textarea minLength={10}   disabled={state.submitted} onChange={(e) => {
                                     setState({ ...state, message: e.target.value });
                                 }} value={state.message} placeholder="message..." />
 
@@ -52,7 +58,7 @@ const Register = () => {
 
                         <button className="register-button">Send</button>
                     </form>
-
+                    <p className="register-error">{state.error}</p>
                 </div>
             }
 
