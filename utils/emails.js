@@ -10,9 +10,38 @@ const mailJet = new MailJet({
 });
 
 
+export const contactEmail = async (n, email, message) => {
+    const em = await mailJet
+    .post("send", {
+        version: "v3.1"
+    })
+    .request({
+        Messages: [{
+            From: {
+                Email: "shresth21oct@gmail.com",
+                Name: `Extra Quadrata`,
+            },
+            To: [{
+                Email: `${email}`,
+                Name: `${n}`,
+            },],
+            Subject: `You recieved a message from ${n}`,
+            TextPart: '',
+            HTMLPart: `
+            <div>
+                <h3> Message: </h3>
+                <p>${message}</p>
+                <a href="mailto:${email}">Reply back to ${email}</a>
+            </div>
+           `
+        },],
+    });
+  
 
+    console.log(em)
+}
 export const verifyEmail = async (member, id, e) => {
-    const email =await mailJet
+    const email = await mailJet
         .post("send", {
             version: "v3.1"
         })
@@ -25,11 +54,11 @@ export const verifyEmail = async (member, id, e) => {
                 To: [{
                     Email: `${member.email}`,
                     Name: `${member.name}`,
-                }, ],
+                },],
                 Subject: `Verify your registration for the ${e} event`,
                 TextPart: '',
                 HTMLPart: verify(member, e, `${process.env.ADDRESS}/verify/${id}`, `${process.env.ADDRESS}/remove/${id}`)
-            }, ],
+            },],
         });
 }
 
@@ -47,10 +76,10 @@ export const checkRegistration = async (member, registration, e, id) => {
                 To: [{
                     Email: `${member.email}`,
                     Name: `${member.name}`,
-                }, ],
+                },],
                 Subject: `Verify your registration for the ${e} event`,
                 HTMLPart: checkRegistrationStatus(member, e, `${process.env.ADDRESS}/registration/${registration}`, `${process.env.ADDRESS}/remove/${id}`)
-            }, ],
+            },],
         });
     await email
 }
