@@ -40,7 +40,7 @@ const organizers = [{
     core: false,
     volunteer: false,
     designation: "Scio",
-    profile: `Aarush is studious, motivated, and very `,
+    profile: `Aarush is studious, motivated, and very energetic. He likes to play chess and badminton. He is the house captain of Gulmohar house for classes 6th to 8th. `,
     image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
 },
 ]
