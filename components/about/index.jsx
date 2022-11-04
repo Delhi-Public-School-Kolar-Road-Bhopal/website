@@ -15,8 +15,8 @@ const organizers = [{
     name: 'Angad Singh Bains',
     core: true,
     designation: "Core Organizer",
-    profile: 'Angad is ambitious, compassionate and creative. He was one of the first members who helped in making the event a great success. He has participated in many online game designing and coding events. He has a eye for perfecion. He bagged first prize movie making and second prize in inter-national gaming compitition. He is also the Head boy of DPS Kolar student council . In his spare time you will find him eating food while working on his computer. He likes to cook and spend time with friends.',
-    image: "/Angad.jpeg"
+    profile: 'Angad is ambitious, compassionate and creative. He was one of the first members who helped in making the event a great success. He has participated in many online game designing and coding events. He has developed many games and arduino projects.  He has a eye for perfecion. He bagged first prize in movie making and got second prize in inter-national gaming compitition. He likes to read books and novels. He is the Head boy of DPS Kolar student council. In his spare time you will find him eating food while working on his computer. Currently pursuing a High School Diploma focused in PCM + IP from Delhi Public School, Kolar Road, Bhopal. He wants to become a game designer and developer. Angad wants to play for a professtional E-sports team. He likes to cook and spend time with friends.',
+    image: "https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
 },
 {
     name: 'Shreshth Verma',
