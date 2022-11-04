@@ -890,6 +890,7 @@ body {
   user-select: auto !important;
   width: calc(100% - 2rem);
   max-height: 80vh;
+  overflow: auto;
   font-size: 2rem;
   z-index: 8;
 }

@@ -187,6 +187,7 @@
                     padding: 1rem 1.4rem;
                     background-color: #011620;
                     max-height: 50vh;
+
                     overflow: auto;
                 }
 
@@ -234,10 +235,11 @@
 
                 position: relative;
                 cursor: auto;
+
                 user-select: auto !important;
                 width: calc(100% - 2rem);
                 max-height: 80vh;
-                // overflow: auto;
+                overflow: auto;
                 font-size: 2rem;
                 z-index: 8;
             }
