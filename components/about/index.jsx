@@ -73,7 +73,7 @@ const organizers = [{
     core:false,
     volunteer: false, 
     designation:'Site Incroyable',
-    image:"/Om.png",
+    image:"/om.jpeg",
     profile:"I am a brother, son and a Programmer. I love cars, my dream car is the car in the image AKA Nissan GTR R-34 Z-Tune. I convert my coffee to code"
 }
 ]
