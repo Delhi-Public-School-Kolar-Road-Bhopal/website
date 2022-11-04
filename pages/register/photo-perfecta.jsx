@@ -74,7 +74,7 @@ const Register = () => {
                         <p>Team Name</p>
                         <input disabled={state.submitted} value={state.teamName} onChange={(e) => setState(state => ({ ...state, teamName: e.target.value }))} type="text" placeholder="Team Name" />
                     </div>
-                    {[1, 2].map((a, i) => {
+                    {[1].map((a, i) => {
                         return (<>
                             <div className="register-input">
                                 <p>Participant {a}'s Name</p>
