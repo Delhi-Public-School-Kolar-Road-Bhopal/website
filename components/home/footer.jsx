@@ -19,10 +19,12 @@ const Footer = (props) => {
                     <Link className='footer-link' href="/contact"><span className='footer-link'>Contact us</span></Link>
                 </div>
                 <h4>Find us on</h4>
-                <div>
-                    <a href="https://github.com/"><FacebookIcon style={{ color: "#fff", fontSize: "2rem" }} /></a>
-                    <a href="https://github.com/"><TwitterIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a>
-                    <a href="https://github.com/"><InstagramIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a>
+                <div style={{display: 'flex', alignItems:'center'}}>
+                    <a href="https://discord.com/invite/UXhPCPRpvu" target="__blank__">
+                        <img src="/icon_clyde_white_RGB.png" style={{width:'2rem'}}/>
+                    </a>
+
+                    <a target="__blank__" href="https://www.instagram.com/extraquadrata/"><InstagramIcon style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a>
                 </div>
 
                 <h4 style={{ display: 'flex', alignItems: 'center' }}>Check out our codebase on <a href='https://github.com/Delhi-Public-School-Kolar-Road-Bhopal'><GitHub style={{ color: "#fff", fontSize: "2rem", marginLeft: "1.4rem" }} /></a></h4>
