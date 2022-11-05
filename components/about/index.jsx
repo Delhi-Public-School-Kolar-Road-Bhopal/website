@@ -53,7 +53,7 @@ const organizers = [{
     name: "Rishabh Kothari",
     core: false,
     volunteer: false,
-    image: "/Rishabh.jpg",
+    image: "https://toppng.com/uploads/preview/and-blank-effect-transparent-11546868080xgtiz6hxid.png",
     designation: "Team leader of Scio",
     profile: "Inquizitive and pragmatic, he has participated in many inter school quizzes and cryptic hunts"
 },
