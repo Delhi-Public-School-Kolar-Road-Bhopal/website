@@ -181,9 +181,9 @@ const InfoSection = () => {
                         <h3>
                             {a.name}
                         </h3>
-                        <p className="info-section-description">
+                        {/* <p className="info-section-description">
                             {a.description}
-                        </p>
+                        </p> */}
                         <h4 className="info-section-each-label" >
 
                             Click to Learn More

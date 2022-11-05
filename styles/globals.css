@@ -1172,6 +1172,17 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .about-organizers-each-designation h4 {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .about-organizers-each-designation {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .about-organizers-each-center {
   display: flex;
   justify-content: center;

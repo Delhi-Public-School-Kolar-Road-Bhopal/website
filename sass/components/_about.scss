@@ -80,6 +80,16 @@
 
             &-designation {
                 display: flex;
+                h4{
+                    @include respond(tablet){
+                        margin-top: 1rem;
+                    }
+                }
+                @include respond(tablet){
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: center;
+                }
                 align-items: center;
             }
 
