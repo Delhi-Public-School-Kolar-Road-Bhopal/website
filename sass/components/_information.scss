@@ -36,6 +36,7 @@
         &-cover {
             filter: blur(.4rem);
 
+            background-image: linear-gradient(to right bottom, #F45A5A, #45038F);
             border-radius: 1.1rem;
             z-index: -1;
             top: 0;
@@ -109,7 +110,8 @@
             tr {
                 // width: 40rem;
                 align-items: center;
-                text-align: right;;
+                text-align: right;
+                ;
                 display: flex;
                 justify-content: space-between;
             }
@@ -176,11 +178,12 @@
             }
 
             &-content {
-                &-outer{
+                &-outer {
                     background-color: #011620;
                     border-radius: 1rem;
-                    padding:1rem;
+                    padding: 1rem;
                 }
+
                 &-inner {
                     // border-radius: 1rem;
                     margin: 1rem;

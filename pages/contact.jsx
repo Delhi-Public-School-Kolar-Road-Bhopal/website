@@ -27,6 +27,8 @@ const Register = () => {
         <div className="register">
             <div className="register-header">
                 <h1>Leave us a message!</h1>
+                
+            <div className='register-header-blur'></div>
                 <video src='cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             {state.submitted ? <div className="register-body">Your message has successfully been sent to us. We will reply back as soon as possible</div>:

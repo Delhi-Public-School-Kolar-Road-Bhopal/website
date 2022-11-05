@@ -26,11 +26,11 @@ const organizers = [{
     image: "/shreshth.jfif"
 },
 {
-    name:"Vyomesh Khare",
-    profile:"Vyomesh, completing high schooling by Mid 2023 in science stream is concurrently preparing for entry into graduate level studies in an engineering institution of respectable stature. With an ever rising reliance on the digital applications including artificial intelligence; he is well entrenched into learning cyber security through upcoming technologies. Extending volunteer services through Cyber Jagriti, he loves cars & concept models, problem solving, helping people of all ages and dissemination of knowledge. A soft spoken, cool thinker & homely, working hard to cast an academic foundation aimed at crafting unique positioning in the professionals world besides playing video games in leisure hours.",
-    core:true,
-    image:"/Vyomesh.jpeg",
-    designation:"External Coordinator",
+    name: "Vyomesh Khare",
+    profile: "Vyomesh, completing high schooling by Mid 2023 in science stream is concurrently preparing for entry into graduate level studies in an engineering institution of respectable stature. With an ever rising reliance on the digital applications including artificial intelligence; he is well entrenched into learning cyber security through upcoming technologies. Extending volunteer services through Cyber Jagriti, he loves cars & concept models, problem solving, helping people of all ages and dissemination of knowledge. A soft spoken, cool thinker & homely, working hard to cast an academic foundation aimed at crafting unique positioning in the professionals world besides playing video games in leisure hours.",
+    core: true,
+    image: "/Vyomesh.jpeg",
+    designation: "External Coordinator",
 },
 {
     name: 'Advay Singh Yadav',
@@ -109,20 +109,20 @@ const organizers = [{
 {
     name: "Misha Baniya",
     core: false,
-    span2:true,
+    span2: true,
     volunteer: true,
     designation: "Member of the Compering Team",
     image: "/Misha.jpeg",
     profile: 'From debates to basketball and everything in between you will have her participating in all of them. From reading countless books in the comfort of her room to being the host of larger than life-scale events, she does it all. Its her open minded thoughts and the willingness to learn that makes Misha who she is. An orator and (wanna be) journalist who loves to voice and write her opinions about everything and anything as she runs on caffeine. She will interject you in forums, compete with you on the basketball court, but throughout it all she will be a dear friend, and confidant. Spending her days striving for all-around excellence and snuggling up to her four pet dogs is her daily routine that she fills in. She explores around in hopes to get better, kinder, knowledgeable, and funnier. All thing food and all thing music, from sarcasm to PJs, she tries to have it all.'
 },
 {
-    name:"Pranam Bharill",
-    profile:"He can be seen engaging in anything from gardening to web series. Pranam’s personal philosophy is closely related to several cognitive theories of motivation in terms of education and learning. At Delhi Public School, Kolar Road, Bhopal, he is pursuing a High School Diploma with a Humanities + Psychology emphasis. He is engaged with many non-governmental organizations to promote animal welfare and put an end to animal cruelty as a result of his love for the voiceless. He desires to gain exposure in the media. He adores unwinding in a nook with his pets while enjoying music during his free time.",
-    core:false,
-    volunteer:true,
-    designation:"Leader of the Compering Team",
-    image:"/Pranam.jpg",
-    span2:true
+    name: "Pranam Bharill",
+    profile: "He can be seen engaging in anything from gardening to web series. Pranam’s personal philosophy is closely related to several cognitive theories of motivation in terms of education and learning. At Delhi Public School, Kolar Road, Bhopal, he is pursuing a High School Diploma with a Humanities + Psychology emphasis. He is engaged with many non-governmental organizations to promote animal welfare and put an end to animal cruelty as a result of his love for the voiceless. He desires to gain exposure in the media. He adores unwinding in a nook with his pets while enjoying music during his free time.",
+    core: false,
+    volunteer: true,
+    designation: "Leader of the Compering Team",
+    image: "/Pranam.jpg",
+    span2: true
 }
 
 ]
@@ -130,7 +130,8 @@ const About = () => {
     return (<div className="about">
         <div className="about-video">
 
-            <h2 className="about-title">ABOUT <br /><br /> US</h2>
+            <div className='register-header-blur'></div>
+            <h2 className="about-title">ABOUT  <span>US</span></h2>
             <video autoPlay loop muted src='/cover.mp4' />
         </div>
         <div className='about-container'>
@@ -185,7 +186,7 @@ const About = () => {
             <div className='about-organizers-sub about-organizers'>
                 {organizers.filter(a => a.volunteer).map((organizer, index) => {
 
-                    return (<div className='about-organizers-each' style={organizer.span2?{ gridColumnStart: 'span 2' }:null} key={index}>
+                    return (<div className='about-organizers-each' style={organizer.span2 ? { gridColumnStart: 'span 2' } : null} key={index}>
 
                         <div className='about-organizers-each-center'> <img className='about-organizers-each-image-center' src={organizer.image} alt={organizer.name + "picture"} />
                         </div>
