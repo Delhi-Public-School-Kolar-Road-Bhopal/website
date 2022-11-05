@@ -260,7 +260,10 @@
 
 
         cursor: pointer;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 6rem);
+        justify-content: space-between;
 
         padding: 3rem;
 
