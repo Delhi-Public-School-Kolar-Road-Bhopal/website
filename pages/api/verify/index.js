@@ -33,7 +33,6 @@ const Handler = async (req, res) => {
                 members: {
                     $in: [user._id]
                 }
-
             });
             console.log(team);
             const registration = await Registration.findOne({

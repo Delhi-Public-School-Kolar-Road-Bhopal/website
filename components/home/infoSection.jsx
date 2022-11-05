@@ -62,7 +62,7 @@ const InfoSection = () => {
     },
     {
         name: 'Filmskaping',
-        liveVideo: '/cover-cryptic.mp4',
+        liveVideo: '/cover-video.mp4',
         description: `Each Team should comprise of 2 members.
         If a team is caught Plagiarizing, it would be immediately disqualified.
         The topic will be provided on the spot.
@@ -80,7 +80,7 @@ const InfoSection = () => {
     },
     {
         name: 'Scio',
-        liveVideo: '/cover-coding.mp4',
+        liveVideo: '/cover-cryptic.mp4',
         description: `
         The quiz will be conducted in 2 parts: A written preliminary and the main quiz.
         The top 6 teams on the basis of preliminary marks would qualify for the main quiz.
@@ -95,7 +95,7 @@ const InfoSection = () => {
     },
     {
         name: 'Site Incroyable',
-        liveVideo: '/cover-coding.mp4',
+        liveVideo: '/cover-website.mp4',
         description: `Participants will be allowed to refer to documentation but copying code is strictly prohibited.
         The Participants will be given an additional 30 minutes to gather resources from the internet.
         The website could be made using REACT, Angular, Vue, or vanilla HTML + JS/TS + CSS.

@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 const info = [{
     name: 'Espit Decode',
     liveVideo: '/cover-coding.mp4',
@@ -16,17 +17,17 @@ const info = [{
 },
 {
     name: 'Site Incroyable',
-    liveVideo: '/cover-cryptic.mp4',
+    liveVideo: '/cover-website.mp4',
     link: 'register/site-incroyable'
 },
 {
     name: 'Scio',
-    liveVideo: '/cover-coding.mp4',
+    liveVideo: '/cover-cryptic.mp4',
     link: 'register/scio'
 },
 {
     name: 'Filmskaping',
-    liveVideo: '/cover-cryptic.mp4',
+    liveVideo: '/cover-video.mp4',
     link: 'register/filmskaping'
 }]
 const Register = () => {
@@ -35,6 +36,8 @@ const Register = () => {
         <div className="register">
             <div className="register-header register-header-2">
                 <h1>Register</h1>
+                
+                <div className='register-header-blur'></div>
                 <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             <div className="register-home">

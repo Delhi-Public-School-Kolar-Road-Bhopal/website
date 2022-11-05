@@ -28,6 +28,8 @@ const Register = () => {
         <div className="register">
             <div className="register-header">
                 <h1>Register for Site Incroyable</h1>
+                
+                <div className='register-header-blur'></div>
                 <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             <div className="register-body">
