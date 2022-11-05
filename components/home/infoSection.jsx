@@ -87,6 +87,7 @@ const InfoSection = () => {
         The quizmaster’s decision would be final and binding.
         Participants to prepare current affairs and general awareness related to IT, history of companies, and  their products
         `,
+        short:"Quizzing is an art form for people who find solace in perpetually striving to attain more knowledge about everything. The Scio Quiz tests a person's level of knowledge about current affairs and general awareness related to IT, the history of companies, and their products. Along with that, it further challenges participants by adding another layer of complexity: teamwork. Along with being well-informed, to succeed in this event, participants ought to have a strong command of communication and coordination ",
         venue: "Magnum Opus",
         timing: 'The event will last for approximately 3 hours',
         tps: 1,
