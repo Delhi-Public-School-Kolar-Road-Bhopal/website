@@ -114,6 +114,15 @@ const organizers = [{
     designation: "Member of the Compering Team",
     image: "/Misha.jpeg",
     profile: 'From debates to basketball and everything in between you will have her participating in all of them. From reading countless books in the comfort of her room to being the host of larger than life-scale events, she does it all. Its her open minded thoughts and the willingness to learn that makes Misha who she is. An orator and (wanna be) journalist who loves to voice and write her opinions about everything and anything as she runs on caffeine. She will interject you in forums, compete with you on the basketball court, but throughout it all she will be a dear friend, and confidant. Spending her days striving for all-around excellence and snuggling up to her four pet dogs is her daily routine that she fills in. She explores around in hopes to get better, kinder, knowledgeable, and funnier. All thing food and all thing music, from sarcasm to PJs, she tries to have it all.'
+},
+{
+    name:"Pranam Bharill",
+    profile:"He can be seen engaging in anything from gardening to web series. Pranam’s personal philosophy is closely related to several cognitive theories of motivation in terms of education and learning. At Delhi Public School, Kolar Road, Bhopal, he is pursuing a High School Diploma with a Humanities + Psychology emphasis. He is engaged with many non-governmental organizations to promote animal welfare and put an end to animal cruelty as a result of his love for the voiceless. He desires to gain exposure in the media. He adores unwinding in a nook with his pets while enjoying music during his free time.",
+    core:false,
+    volunteer:true,
+    designation:"Leader of the Compering Team",
+    image:"/Pranam.jpg",
+    span2:true
 }
 
 ]
