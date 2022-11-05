@@ -5,9 +5,12 @@ const InfoSection = () => {
     const info = [{
         name: 'Esprit decode',
         liveVideo: '/cover-coding.mp4',
-        description: `This event tests participants\' abilities to program solutions to the presented problems using Python or JavaScript. The event will have three non-parallel
-        rounds which will test participants\' algorithmic abilities. In addition, there will be a Data Structure round which will run parallel to the other rounds. 
-        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        description: `Participants will be allowed to refer to documentation; however, copying code would be strictly prohibited.
+        The students are allowed to use JS/python; No additional libraries, modules, or frameworks will be allowed.
+        There will be 4 levels—Round #1, Round #2, Round #3, and the data structure round. the data structure round will run parallel to the other rounds.
+        The questions in the first round will carry 10 scores each, the ones in the second round and the data structures round will carry 20 scores each, and the ones in the third round will carry 30 scores each. There will be an opportunity to gain bonus scores.
+        Awards and separate certificates of recognition will be given to participants who’d be ranked #1, #2, and #3, as well as participants with outstanding programming knowledge who, for some reason, couldn’t be allocated any of the aforementioned ranks
+        `,
         venue: "Senior Computer Lab",
         timing: 'The event will last for approximately 3 hours, without accounting for breaks. The first round will last for 30 minutes. The second round will last for an hour. The third round will last for an hour and thirty minutes. You will be allowed to work on questions from the previous round(s) and the Data Structure during the second and third rounds',
         tps: 1,
@@ -17,16 +20,17 @@ const InfoSection = () => {
     {
         name: 'Photo Perfecta',
         liveVideo: '/cover-photography.mp4',
-        description: `This is an online event.
+        description: `
+        This is an online event.
         This is an individual event.
-        The participants will have to submit their photographs online on the provided google form.
-        Each participant will have to send 2 photographs; 1 photograph for each theme.
-        Participants have to attach their raw image(if any) and unedited photograph for each of their entries else their submissions will not be considered.
-        Participants need to provide the EXIF details along with each of their entries.
-        Manipulation is not allowed, but basic post-processing such as exposure correction, contrast adjustments, and color enhancement is allowed.
-        Removal of any object from the photograph is strictly prohibited.
-        Participants have to upload their original work only
-
+        The participants have to submit their photographs online on the provided google form.
+        The theme will be provided on 13th november. The photograph has to be clicked between 13-15 November.
+        The last date and time for submission is 15th november 2022, 23:59:59.
+        Each participant has to send 2 photographs; 1 photograph for each theme.
+        Participants have to attach their raw image(if any).
+        Participants need to provide the Exif(Exchangeable Image File Format) details along with each of their entries.
+        any type of Manipulation is not allowed however basic post-processing will be considered.
+        Participants have to upload their original work
         `,
         venue: "Online",
         timing: 'The participants will be given one week to submit their photographs. The last date for submission is 3rd November 2022',
@@ -40,13 +44,13 @@ const InfoSection = () => {
         All matches will be held online.
         Playoffs will be Best of 1 and Semi-finals and Finals will be best of 3 and 5 respectively.
         By participating, players agree that their Riot account is visible to third parties.
-        The OC will always have the final say on any matter. Contact an OC member to resolve any dispute.
-        Having any form of conversation or mutual understanding that results in the predetermination of a match’s or a round’s result would lead to immediate disqualification.
-        Players will be required to play using their registered riot id.
+        The OC will always have the final say on any matter. Contact an OC member to resolve any disputes.
+        Having any form of conversation or mutual understanding that results in the predetermination of a match’s result would lead to immediate disqualification.
+        Players are required to play using their registered Riot Id.
         It is advised that players take screenshots of game scores.
-        only 3 timeouts will be allowed.1 before the half, 1 after the half and 1 in overtime.
-        If a technical problem arises 10 min timeout will be given.
-        Coaches will be allowed only if both teams have them
+        only 3 timeouts are allowed.1 before the half, 1 after the half and in overtime.
+        If a technical problem arises 10min timeout will be given.
+        Coaches are not allowed
         `,
         venue: "Online",
         timing: "Flexible",
