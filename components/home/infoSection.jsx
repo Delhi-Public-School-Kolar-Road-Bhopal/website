@@ -48,12 +48,12 @@ const InfoSection = () => {
         Having any form of conversation or mutual understanding that results in the predetermination of a match’s result would lead to immediate disqualification.
         Players are required to play using their registered Riot Id.
         It is advised that players take screenshots of game scores.
-        only 3 timeouts are allowed.1 before the half, 1 after the half and in overtime.
+        Only 3 timeouts are allowed—1 before the half, 1 after the half and in overtime.
         If a technical problem arises 10min timeout will be given.
         Coaches are not allowed
         `,
         venue: "Online",
-        timing: "Flexible",
+        timing: "As per the Brackets",
         tps: 1,
         participants: "6(5 players + 1 substitute)"
     },
@@ -65,10 +65,12 @@ const InfoSection = () => {
         The topic will be provided on the spot.
         The video should be uploaded to a specific youtube channel with a Uniquely identifiable description which will be provided to each team .
         The Video's length should not exceed 5 minutes.
-        Participants have to record the video in the school.
+        Participants have to record the video in our school.
+        Participants will be given 1 hour to record the video.
+        1hr 30min will be given for editing the video.
         A tour of the school will be provided`,
-        venue: "School Premises",
-        timing: 'The event will last for approximately 2 hours, without accounting for breaks',
+        venue: "School Premises and Middle Computer Lab",
+        timing: 'The event will last for approximately 2 hours and 30 minutes, without accounting for breaks',
         tps: 1,
         participants: 2
     },
@@ -79,7 +81,7 @@ const InfoSection = () => {
         The quiz will be conducted in 2 parts: A written preliminary and the main quiz.
         The top 6 teams on the basis of preliminary marks would qualify for the main quiz.
         The quizmaster’s decision would be final and binding.
-        participants to prepare current affairs and general awareness related to IT, history of companies, and  their products
+        Participants to prepare current affairs and general awareness related to IT, history of companies, and  their products
         `,
         venue: "Magnum Opus",
         timing: 'The event will last for approximately 3 hours',
