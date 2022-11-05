@@ -26,6 +26,13 @@ const organizers = [{
     image: "/shreshth.jfif"
 },
 {
+    name:"Vyomesh Khare",
+    profile:"Vyomesh, completing high schooling by Mid 2023 in science stream is concurrently preparing for entry into graduate level studies in an engineering institution of respectable stature. With an ever rising reliance on the digital applications including artificial intelligence; he is well entrenched into learning cyber security through upcoming technologies. Extending volunteer services through Cyber Jagriti, he loves cars & concept models, problem solving, helping people of all ages and dissemination of knowledge. A soft spoken, cool thinker & homely, working hard to cast an academic foundation aimed at crafting unique positioning in the professionals world besides playing video games in leisure hours.",
+    core:true,
+    image:"/Vyomesh.jpeg",
+    designation:"External Coordinator",
+},
+{
     name: 'Advay Singh Yadav',
     core: false,
     volunteer: true,
