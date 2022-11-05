@@ -40,13 +40,13 @@ const InfoSection = () => {
         All matches will be held online.
         Playoffs will be Best of 1 and Semi-finals and Finals will be best of 3 and 5 respectively.
         By participating, players agree that their Riot account is visible to third parties.
-        The OC will always have the final say on any matter. Contact an OC member to resolve any dispute.
-        Having any form of conversation or mutual understanding that results in the predetermination of a match’s or a round’s result would lead to immediate disqualification.
-        Players will be required to play using their registered riot id.
+        The OC will always have the final say on any matter. Contact an OC member to resolve any disputes.
+        Having any form of conversation or mutual understanding that results in the predetermination of a match’s result would lead to immediate disqualification.
+        Players are required to play using their registered Riot Id.
         It is advised that players take screenshots of game scores.
-        only 3 timeouts will be allowed.1 before the half, 1 after the half and 1 in overtime.
-        If a technical problem arises 10 min timeout will be given.
-        Coaches will be allowed only if both teams have them
+        only 3 timeouts are allowed.1 before the half, 1 after the half and in overtime.
+        If a technical problem arises 10min timeout will be given.
+        coaches are not allowed
         `,
         venue: "Online",
         timing: "Flexible",
