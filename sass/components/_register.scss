@@ -102,6 +102,9 @@
 
     &-button {
         margin: 0 auto;
+        @include respond(tablet) {
+            margin: 3rem auto;
+        }
         width: 90%;
         margin: 0 0;
         max-width: 30rem;
@@ -174,6 +177,7 @@
         margin: 2rem auto;
         max-height: 100%;
         display: grid;
+
         justify-content: space-between;
         padding: 2rem 5rem;
 
@@ -181,11 +185,10 @@
             // display: none
             max-height: 100%;
             padding: 3rem 3rem 5rem;
-            grid-gap: 2rem;
+    
             // margin:0;
             width: calc(100% - 10rem);
-            display: grid;
-            grid-template-columns: 1fr !important;
+            display: block;
         }
 
         grid-template-columns: 1fr 1fr;
