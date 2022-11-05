@@ -29,7 +29,7 @@ const InfoSection = () => {
         Each participant has to send 2 photographs; 1 photograph for each theme.
         Participants have to attach their raw image(if any).
         Participants need to provide the Exif(Exchangeable Image File Format) details along with each of their entries.
-        any type of Manipulation is not allowed however basic post-processing will be considered.
+        Any type of Manipulation is not allowed however basic post-processing will be considered.
         Participants have to upload their original work
         `,
         venue: "Online",
@@ -60,15 +60,15 @@ const InfoSection = () => {
     {
         name: 'Filmskaping',
         liveVideo: '/cover-cryptic.mp4',
-        description: `Each Team can have up to 2 participants.
+        description: `Each Team should comprise of 2 members.
         If a team is caught Plagiarizing, it would be immediately disqualified.
-        The topic will be provided on the Event date.
-        The video should be uploaded to youtube with a Uniquely identifiable description which will be provided to each team before the submission date.
+        The topic will be provided on the spot.
+        The video should be uploaded to a specific youtube channel with a Uniquely identifiable description which will be provided to each team .
         The Video's length should not exceed 5 minutes.
-
-        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
-        venue: "Junior Computer Lab",
-        timing: 'The event will last for approximately 3 hours, without accounting for breaks',
+        Participants have to record the video in the school.
+        A tour of the school will be provided`,
+        venue: "School Premises",
+        timing: 'The event will last for approximately 2 hours, without accounting for breaks',
         tps: 1,
         participants: 2
     },
@@ -76,12 +76,11 @@ const InfoSection = () => {
         name: 'Scio',
         liveVideo: '/cover-coding.mp4',
         description: `
-        The quiz will be conducted in 2 rounds: A written preliminary and the main quiz. Rules for the above will be shared on the spot.
+        The quiz will be conducted in 2 parts: A written preliminary and the main quiz.
         The top 6 teams on the basis of preliminary marks would qualify for the main quiz.
-        In case there is a tie, rules for the tie breaker would be announced on spot.
         The quizmaster’s decision would be final and binding.
-        Participants to prepare current affairs and general awareness related to IT, history of companies and  their products.
-        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies`,
+        participants to prepare current affairs and general awareness related to IT, history of companies, and  their products
+        `,
         venue: "Magnum Opus",
         timing: 'The event will last for approximately 3 hours',
         tps: 1,
@@ -90,15 +89,14 @@ const InfoSection = () => {
     {
         name: 'Site Incroyable',
         liveVideo: '/cover-coding.mp4',
-        description: `This event tests participants\' abilities to create fast, efficient, optimized, and glamorous website. The event will have just a single round.  The Participants will be given an additional 30 minutes to gather resources from the internet.
+        description: `Participants will be allowed to refer to documentation but copying code is strictly prohibited.
+        The Participants will be given an additional 30 minutes to gather resources from the internet.
         The website could be made using REACT, Angular, Vue, or vanilla HTML + JS/TS + CSS.
-        for using any additional frameworks or libraries, permission from the organizing team will be required.
-        The topic of the event will be mentioned on the spot.
-        The top 3 teams will be given a certificate of appreciation. The participants of the first team will be given individual trophies
-       
+        For using any additional frameworks or libraries, permission from the organizing team will be required.
+        The topic of the event will be Declared on the spot
         `,
         venue: "Middle Computer Lab",
-        timing: 'The event will last for approximately 4 hours',
+        timing: 'The event will last for approximately 3 hours',
         tps: 1,
         participants: 2
     }
