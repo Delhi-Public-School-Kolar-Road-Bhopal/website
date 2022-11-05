@@ -13,20 +13,27 @@ import connect from '../../../utils/mongoDBConnector';
 
 const Handler = async (req, res) => {
     try {
-      
+
         if (req.method === 'POST') {
-            const { id } = req.body;
-            
-            const verify = await Verify.findOne({ code: id });
+            const {
+                id
+            } = req.body;
+
+            const verify = await Verify.findOne({
+                code: id
+            });
             console.log(verify)
             if (!verify) {
-                return res.status(400).json({ error: "Not found" });
+                return res.status(400).json({
+                    error: "Not found"
+                });
             }
             const user = await Member.findById(verify.member);
             const team = await Team.findOne({
-                $in: {
-                    members: user._id
+                members: {
+                    $in: [user._id]
                 }
+
             });
             console.log(team);
             const registration = await Registration.findOne({
@@ -36,10 +43,12 @@ const Handler = async (req, res) => {
             user.verified = true;
             await user.save();
             await verify.delete();
-            return res.json({ msg: "user verified", id: registration._id })
+            return res.json({
+                msg: "user verified",
+                id: registration._id
+            })
         }
-    }
-    catch (err) {
+    } catch (err) {
         console.log(err)
     }
 }
