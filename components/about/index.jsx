@@ -102,7 +102,7 @@ const organizers = [{
     name: "Aarya Sharma",
     core: false,
     volunteer: false,
-    designation: "Member of the Filmskaping team",
+    designation: "Member of the Quiz team",
     image: '/Aarya.jpeg',
     profile: `Aarya Sharma is ambitious, extremely hard working, reliable, and has good oratory skills. She is immensely passionate about dancing and is a state level volleyball player. She is also a good student with interests in poetry , philosophy, etc.`
 },
