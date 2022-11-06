@@ -8,8 +8,7 @@ const InfoSection = () => {
         description: `Participants will be allowed to refer to documentation; however, copying code would be strictly prohibited.
         The students are allowed to use JS/python; No additional libraries, modules, or frameworks will be allowed.
         There will be 4 levels—Round #1, Round #2, Round #3, and the data structure round. the data structure round will run parallel to the other rounds.
-        The questions in the first round will carry 10 scores each, the ones in the second round and the data structures round will carry 20 scores each, and the ones in the third round will carry 30 scores each. There will be an opportunity to gain bonus scores.
-        Awards and separate certificates of recognition will be given to participants who’d be ranked #1, #2, and #3, as well as participants with outstanding programming knowledge who, for some reason, couldn’t be allocated any of the aforementioned ranks
+        The questions in the first round will carry 10 scores each, the ones in the second round and the data structures round will carry 20 scores each, and the ones in the third round will carry 30 scores each. There will be an opportunity to gain bonus scores
         `,
         short: "The dawn of this century came with the advent of a new sport, competitive programming. This competition challenges participants' ability to produce optimized, efficient, scalable, and readable solutions to tricky questions in four highly challenging rounds. To excel at this competition, a person needs to have outstanding skills and knowledge about data structures and algorithms and either python or the javascript programming language. However, to enjoy this event, there are no such requirements. We have curated a diverse array of questions that challenge and force participants to think outside the box, some of which require little expertise while others require exceptionalism. ",
         venue: "Senior Computer Lab",
