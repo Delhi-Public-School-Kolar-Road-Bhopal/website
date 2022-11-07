@@ -13,12 +13,7 @@ import connect from '../../../utils/mongoDBConnector';
 
 
 const Handler = async (req, res) => {
-    const {
-        school,
-        event,
-        teamName,
-        members
-    } = req.body;
+
     try {
         await connect();
         const { id } = req.query;

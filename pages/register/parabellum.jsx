@@ -39,7 +39,7 @@ const Register = () => {
             },
         ],
         teamName: "",
-        submitted:false
+        submitted: false
     });
     const [error, setError] = React.useState("");
     const [success, setSuccess] = React.useState("");
@@ -48,21 +48,31 @@ const Register = () => {
         <div className="register">
             <div className="register-header">
                 <h1>Register for Parabellum</h1>
-                
+
                 <div className='register-header-blur'></div>
                 <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             <div className="register-body">
                 <form className="register-form" onSubmit={async (e) => {
                     e.preventDefault();
-                    if (state.members[0].name === "" || state.members[0].email === "" || state.members[1].name === "" || state.members[1].email === "" || state.teamName === "" || state.school === "") {
+                    let i = 0;
+                    while(i < state.members.length){
+                        let member = state.members[i];
+                        if (!emailValidator(member.email)) {
+                            setError("Please make sure that all email addresses are valid");
+                            return;
+                        }
+                        if (member.name.length < 3) {
+                            setError("Please make sure that you have entered all names");
+                            return;
+                        }
+                        i++;
+                    }
+                    if (state.teamName === "" || state.school === "") {
                         setError("All fields are required");
                         return
                     }
-                    if (!emailValidator(state.members[0].email) || !emailValidator(state.members[1].email)) {
-                        setError("Invalid email");
-                        return
-                    }
+                  
 
                     setError("");
                     try {

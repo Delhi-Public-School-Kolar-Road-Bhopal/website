@@ -2,6 +2,7 @@ const MailJet = require("node-mailjet");
 
 import {
     checkRegistrationStatus,
+    registrationCanceled,
     verifyEmail as verify
 } from './emailTemplates';
 const mailJet = new MailJet({
@@ -40,7 +41,7 @@ export const contactEmail = async (n, email, message) => {
 
     console.log(em)
 }
-export const verifyEmail = async (member, id, e) => {
+export const verifyEmail = async (member, registration, id, e) => {
     const email = await mailJet
         .post("send", {
             version: "v3.1"
@@ -57,12 +58,34 @@ export const verifyEmail = async (member, id, e) => {
                 },],
                 Subject: `Verify your registration for the ${e} event`,
                 TextPart: '',
-                HTMLPart: verify(member, e, `${process.env.ADDRESS}/verify/${id}`, `${process.env.ADDRESS}/remove/${id}`)
+                HTMLPart: verify(member, e, `${process.env.ADDRESS}/verify/${id}`, `${process.env.ADDRESS}/remove/${registration}`)
             },],
         });
 }
 
-export const checkRegistration = async (member, registration, e, id) => {
+export const cancelRegistration = async (member, e) => {
+    const email = await mailJet
+    .post("send", {
+        version: "v3.1"
+    })
+    .request({
+        Messages: [{
+            From: {
+                Email: "shresth21oct@gmail.com",
+                Name: `Extra Quadrata`,
+            },
+            To: [{
+                Email: `${member.email}`,
+                Name: `${member.name}`,
+            },],
+            Subject: `Your registration for the ${e} event has been canceled by one of your teammates`,
+            TextPart: '',
+            HTMLPart: registrationCanceled(member, e)
+        },],
+    });
+}
+
+export const checkRegistration = async (member, registration, e) => {
     const email = mailJet
         .post("send", {
             version: "v3.1"
@@ -77,8 +100,8 @@ export const checkRegistration = async (member, registration, e, id) => {
                     Email: `${member.email}`,
                     Name: `${member.name}`,
                 },],
-                Subject: `Verify your registration for the ${e} event`,
-                HTMLPart: checkRegistrationStatus(member, e, `${process.env.ADDRESS}/registration/${registration}`, `${process.env.ADDRESS}/remove/${id}`)
+                Subject: `Check your registration status for the ${e} event`,
+                HTMLPart: checkRegistrationStatus(member, e, `${process.env.ADDRESS}/registration/${registration}`, `${process.env.ADDRESS}/remove/${registration}`)
             },],
         });
     await email

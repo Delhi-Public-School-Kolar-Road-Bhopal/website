@@ -1,5 +1,5 @@
 export const verifyEmail = (member, event, link, link2) => {
-    return `<div style="background-color:#011620; padding:2rem;margin:0">
+  return `<div style="background-color:#011620; padding:2rem;margin:0">
   <div>
     <img style="width:200px; border-radius:100%" src="https://res.cloudinary.com/dx73dzg3g/image/upload/v1665937862/socizilla/Headway_1_nqxohs.png">
   </div>
@@ -23,7 +23,7 @@ export const verifyEmail = (member, event, link, link2) => {
 }
 
 export const checkRegistrationStatus = (member, eventName, link, link2) => {
-    return `
+  return `
     <div style="background-color:#011620; padding:2rem;margin:0">
   <div style="display: flex; justify-content:center">
     <img style="width:200px; border-radius:100%" src="https://res.cloudinary.com/dx73dzg3g/image/upload/v1665937862/socizilla/Headway_1_nqxohs.png">
@@ -45,4 +45,27 @@ export const checkRegistrationStatus = (member, eventName, link, link2) => {
   <p style="margin-top:0"> © 2022 Extra Quadrata, Headway, DPS Kolar Road Bhopal
   <p style="color:white; text-decoration:none">For more information, click <a style="color:white" href=${process.env.ADDRESS}>here</a></p> 
 </div>`
+}
+export const registrationCanceled = (member, eventName) => {
+
+  return `<div style="background-color:#011620; padding:2rem;margin:0">
+  <div>
+    <img style="width:200px; border-radius:100%" src="https://res.cloudinary.com/dx73dzg3g/image/upload/v1665937862/socizilla/Headway_1_nqxohs.png">
+  </div>
+  <div style="color:white">
+  <h3>Greetings, ${member.name}</h3>
+    <p>
+      Your registration process for the ${eventName} event has been canceled by one of your team members. In case this was accidental, free free to register again on our website.
+    </p>
+</div>
+<div style="background-color:black; text-align:center; padding:2rem; color:white;"> 
+  <p style="margin-top:0"> © 2022 Extra Quadrata, Headway, DPS Kolar Road Bhopal
+  <p style="color:white; text-decoration:none">For more information, click <a style="color:white" href=${process.env.ADDRESS}>here</a></p> 
+</div>`
+
+}
+export const registrationAccepted = (member, eventName, link) => {}
+
+export const registrationDenied = (member, eventName, link) => {
+
 }

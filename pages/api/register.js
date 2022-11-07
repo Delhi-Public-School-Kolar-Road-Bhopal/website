@@ -86,13 +86,8 @@ const Handler = async (req, res) => {
 
             for (let i = 0; i < members.length; i++) {
                 let member = new Member(members[i]);
-                let verify = new Verify({
-                    code: uuid(),
-                    member: member._id
-                });
+
                 await member.save();
-                await verify.save();
-                await verifyEmail(member, verify.code, event);
                 mems = [...mems, member._id];
             }
 
@@ -115,14 +110,19 @@ const Handler = async (req, res) => {
                 let verified = await Verify.findOne({
                     member: member._id
                 });
-                await checkRegistration(member, registration._id, event, verified.code);
+                let verify = new Verify({
+                    code: uuid(),
+                    member: member._id
+                });
+                await verify.save();
+                await verifyEmail(member, registration._id, verify.code, event);
+                await checkRegistration(member, registration._id, event);
             }
             return res.status(200).json({
                 error: 'Team registered'
             });
         }
-    }
-    catch(err){
+    } catch (err) {
         console.log(err)
         return res.status(500).json({
             error: "We can't process your request at the moment. Please try again later"
