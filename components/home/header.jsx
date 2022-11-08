@@ -4,7 +4,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Header = (props) => {
     return (<div className="header">
-        <video src={props.video.src} autoPlay={true} loop={true} muted={true} className="header-video" />
+        <video src={props.video.src} autoPlay={true} loop={false} muted={true} className="header-video" />
         <div className="header-content">
             <h1>{props.title}</h1>
             <p>{props.description}</p>
