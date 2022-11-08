@@ -34,7 +34,7 @@ const InfoSection = () => {
         `,
         short: "Photo perfecta is the perfect opportunity for all the creative photographers out there to showcase their masterpiece and compete with other photographers as well.",
         venue: "Online",
-        timing: 'The participants will be given one week to submit their photographs. The last date for submission is 15rd November 2022',
+        timing: 'The participants will be given 3 days to click and submit their photographs. The last date for submission is 15rd November 2022',
         tps: 2,
         participants: 1
     },
