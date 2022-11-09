@@ -53,7 +53,7 @@ const Registration = () => {
             </div>
 
             <p>Please note that all team members must verify their email address inorder to be considered for registration approval </p>
-            <p>In order to cancel your registration, click on the "didn't register" link sent to you in the emails.</p>
+            <p>In order to cancel your registration, click on the {"\"didn't register\""} link sent to you in the emails.</p>
             <p>To update your registration, contact us</p>
         </div>
     </div>
