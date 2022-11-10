@@ -20,5 +20,8 @@ export default [
     "Gyan Ganga International School ",
     "St. Montfort School ",
     "Carmel convent ",
-    "St Joseph Co-ed"
+    "St Joseph Co-ed",
+    "Campion School, Bhopal",
+    "Spring Dales, Pusa",
+    "Other"
 ]
