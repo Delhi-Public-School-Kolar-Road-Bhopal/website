@@ -40,7 +40,7 @@ const InfoSection = () => {
     },
     {
         name: 'Parabellum',
-        liveVideo: '/Valo Site Vid.mp4',
+        liveVideo: '/valorant-cover.mp4',
         description: `
         All matches will be held online.
         Playoffs will be Best of 1 and Semi-finals and Finals will be best of 3 and 5 respectively.
