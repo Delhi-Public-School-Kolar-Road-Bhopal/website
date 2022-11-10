@@ -1,4 +1,5 @@
 export default [
+    "Other",
     "Delhi Public School, Neelbad",
     "Delhi Public School, Rau",
     "Delhi Public School, Indore",
@@ -22,6 +23,5 @@ export default [
     "Carmel convent ",
     "St Joseph Co-ed",
     "Campion School, Bhopal",
-    "Spring Dales, Pusa",
-    "Other"
+    "Spring Dales, Pusa"
 ]
