@@ -14,6 +14,7 @@ const Register = () => {
             }
         ],
         teamName: "",
+        other:false,
         submitted:false
     });
     const [error, setError] = React.useState("");
@@ -51,20 +52,27 @@ const Register = () => {
 
                 }}>
                     <div className="register-input">
-                        <p>School Name</p>
+                        <p>Select School</p>
                         <div type="text" className='input' onClick={() => {
                             if (!state.submitted) {
                                 setDropdown(!dropdown);
                             }
                         }}>
-                            {state.school.length > 0 ? state.school : "School Name"}
+                            {state.other? "Other":state.school.length > 0 ? state.school : "School Name"}
                             {dropdown ? <div className='register-dropdown'>
                                 {listOfSchools.map((a, i) => {
                                     return <div onClick={() => {
+                                        if (a === "Other" ) { 
+                                            setState(state=> ({ ...state, other:true, school:'' }));
+                                        }
+                                        else {
                                         setState({
                                             ...state,
-                                            school: a
+                                            school: a,
+                                            other: false
                                         });
+                                    }
+
                                         setDropdown(false);
                                     }} key={i}>{a}</div>
                                 })}
@@ -72,6 +80,10 @@ const Register = () => {
                         </div>
 
                     </div>
+                    {state.other?<div className="register-input">
+                        <p>School Name</p>
+                        <input disabled={state.submitted} value={state.school} onChange={(e) => setState(state => ({ ...state, school: e.target.value }))} type="text" placeholder="School Name" />
+                    </div>: null}
                     <div className="register-input">
                         <p>Team Name</p>
                         <input disabled={state.submitted} value={state.teamName} onChange={(e) => setState(state => ({ ...state, teamName: e.target.value }))} type="text" placeholder="Team Name" />
@@ -97,7 +109,7 @@ const Register = () => {
                         </>)
 
                     })}
-
+                    {state.other?<span></span>: null}
                     <button className="register-button">Register</button>
                 </form>
                 <p>{error}</p>
