@@ -1,5 +1,6 @@
 export default [
     "Delhi Public School, Neelbad",
+    "Delhi Public School, RkPuram",
     "Delhi Public School, Rau",
     "Delhi Public School, Indore",
     "The Sanskaar Valley School",
@@ -20,5 +21,7 @@ export default [
     "Gyan Ganga International School ",
     "St. Montfort School ",
     "Carmel convent ",
-    "St Joseph Co-ed"
+    "St Joseph Co-ed",
+    "Campion School, Bhopal",
+    "Other"
 ]
