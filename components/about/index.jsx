@@ -32,20 +32,12 @@ const organizers = [{
     image: "/Vyomesh.jpeg",
     designation: "External Coordinator",
 },
-{
-    name: 'Advay Singh Yadav',
-    core: false,
-    volunteer: true,
-    designation: "Member of the Compering Team",
-    profile: `He is an over-thinker. He makes small models in Blender and Studio and animates a little. He works for a few games online. He likes meeting new people. I sing online as well on my Instagram profile. Thank you.`,
-    image: "/Advay.jpeg"
-},
 
 {
     name: "Dhairya Garg",
     core: false,
     volunteer: false,
-    designation: "Scio and Co-Team Leader of Site Incroyable",
+    designation: "Team Leader of Site Incroyable",
     profile: "Dhairya is a quiz-zard and a programmer through and through. Being curious, reliable and keen individual, Dhairya has an analytical and rational mind.",
     image: "/Dhairya.jpeg"
 },
@@ -58,34 +50,18 @@ const organizers = [{
     profile: "Inquizitive and pragmatic, he has participated in many inter school quizzes and cryptic hunts"
 },
 {
-    name: "Anirudh Nagarajan",
-    profile: "I am a person who is reliable. I have a keen interest in almost everything and love to know more every time. I like solving problems and love challenges. One of my biggest goals has remained of being trustworthy and a good person. I am known for helping people and also do said help in the best way I can.",
+    name: "Ayush Narwariya",
+    profile: "Ayush is someone you can rely on he loves to hear your past experiences and future plans and likes to discuss abt various conspiracies regarding life, he is also a major asset for his school valorant team and he is currently pursuing his high school diploma in PCM + IP he is someone who is always ready to comfort you in any situation you'll find him lazing around with his friends either playing video games or sporting he is also a valuable asset for school E-sports team, his side hobbies include singing, playing piano and playing cricket he is someone who'll be happy to help u throughout the event.",
     core: false,
     volunteer: false,
-    image: "/Anirudh.jpeg",
-    designation: "Member of the Esprit Decode team and the president of the student council",
-},
-{
-    name: 'Aarush Shrivastava',
-    core: false,
-    volunteer: false,
-    designation: "Scio",
-    profile: `Aarush is studious, motivated, and very energetic. He likes to play chess and badminton. He is the house captain of Gulmohar house for classes 6th to 8th. `,
-    image: "/Aarush.jpg"
-},
-{
-    name: "Purunjay Pratap Singh",
-    core: false,
-    volunteer: false,
-    designation: "Parabellum",
-    profile: "I'm that person you will want to be friends with. I am a memer, gamer, e-sports player and graphic designer. I love to bring positivity and joy to the world through art, design and e-sports.",
-    image: '/Purunjay.jpeg'
+    image: "/Ayush Profile.jpg",
+    designation: "Team Leader of Parabellum",
 },
 {
     name: "Buddha Dev Das",
     core: false,
     volunteer: false,
-    designation: "Team leader of Parabellum",
+    designation: "Team leader of Flimscaping",
     profile: "Buddha is an esports player and a tech enthusiast. He is a 10th grader who wants to be a pro esports athlete in the future. He also has side hobbies which include playing the guitar, footballer for his school team and does lifting aswell. He assures his total dedication in making this event a joyful one for every participant.",
     image: "/Buddha.jpeg"
 },
@@ -93,11 +69,38 @@ const organizers = [{
     name: "Om Pratap Dhaker",
     core: false,
     volunteer: false,
-    designation: 'Co-Team Leader of Site Incroyable',
+    designation: 'Team Leader of Esprit Decode',
     image: "/om.jpeg",
     profile: `I am a programmer who is constantly trying to improve his skills. I am one of the prominent feather in the DPS Kolar's cap. I am a huge car fan who is basically obsessed with the JDMs'. Lastly, "I am the one who converts coffee to code".
     `
 },
+{
+    name: "Anirudh Nagarajan",
+    profile: "I am a person who is reliable. I have a keen interest in almost everything and love to know more every time. I like solving problems and love challenges. One of my biggest goals has remained of being trustworthy and a good person. I am known for helping people and also do said help in the best way I can.",
+    core: false,
+    volunteer: false,
+    image: "/Anirudh.jpeg",
+    designation: "Member of the Esprit Decode team and the president of the student council",
+},
+
+{
+    name: 'Aarush Shrivastava',
+    core: false,
+    volunteer: false,
+    designation: "Member of Scio team",
+    profile: `Aarush is studious, motivated, and very energetic. He likes to play chess and badminton. He is the house captain of Gulmohar house for classes 6th to 8th. `,
+    image: "/Aarush.jpg"
+},
+{
+    name: "Purunjay Pratap Singh",
+    core: false,
+    volunteer: false,
+    designation: "Member of Parabellum team",
+    profile: "I'm that person you will want to be friends with. I am a memer, gamer, e-sports player and graphic designer. I love to bring positivity and joy to the world through art, design and e-sports.",
+    image: '/Purunjay.jpeg'
+},
+
+
 {
     name: "Aarya Sharma",
     core: false,
@@ -105,6 +108,15 @@ const organizers = [{
     designation: "Member of the Quiz team",
     image: '/Aarya.jpeg',
     profile: `Aarya Sharma is ambitious, extremely hard working, reliable, and has good oratory skills. She is immensely passionate about dancing and is a state level volleyball player. She is also a good student with interests in poetry , philosophy, etc.`
+},
+
+{
+    name: 'Advay Singh Yadav',
+    core: false,
+    volunteer: true,
+    designation: "Member of the Compering Team",
+    profile: `He is an over-thinker. He makes small models in Blender and Studio and animates a little. He works for a few games online. He likes meeting new people. I sing online as well on my Instagram profile. Thank you.`,
+    image: "/Advay.jpeg"
 },
 {
     name: "Misha Baniya",
@@ -124,6 +136,7 @@ const organizers = [{
     image: "/Pranam.jpg",
     span2: true
 }
+
 
 ]
 const About = () => {
