@@ -56,17 +56,7 @@
                 background-image: linear-gradient(to right bottom, #5278DD, #16014B);
             }
 
-            &:nth-child(5) {
-                grid-column-start: 1;
-                grid-column-end: 3;
-
-                background-image: linear-gradient(100deg, #F45A5A, #45038F, #45038F 40%, #5278DD 60%, #5278DD, #16014B);
-
-                h3 {
-                    text-align: center;
-
-                }
-            }
+            
 
             padding:1rem 2rem;
             border-radius: 1.1rem;
