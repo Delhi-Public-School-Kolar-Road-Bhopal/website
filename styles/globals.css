@@ -1315,6 +1315,101 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.admin-header h1 {
+  font-size: 4rem;
+}
+.admin-registration {
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.4);
+}
+.admin-registration-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+.admin-registration-header:not(.admin-registration-header:last-child) {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #fff 1px solid;
+}
+.admin-emails {
+  white-space: nowrap;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  width: 100%;
+  max-width: 50rem;
+}
+.admin-container {
+  overflow: auto;
+  padding: 4rem;
+}
+.admin-container-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10rem;
+}
+.admin-container-inner-each {
+  color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.admin-container-inner-each p {
+  font-size: 1.4rem;
+}
+.admin-container-inner-each h2 {
+  font-size: 2.1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+}
+.admin-container-inner-each:nth-child(1) {
+  background-image: linear-gradient(to bottom right, #0655F3, #6206F3);
+}
+.admin-container-inner-each:nth-child(2) {
+  background-image: linear-gradient(to bottom right, #F30625, #6206F3);
+}
+.admin-container-inner-each:nth-child(3) {
+  background-image: linear-gradient(to bottom right, #859D04, #1D3714);
+}
+.admin-container-inner-each:nth-child(4) {
+  background-image: linear-gradient(to bottom right, #9D047B, #046A9D);
+}
+.admin-container-inner-each:nth-child(5) {
+  background-image: linear-gradient(to bottom right, #F65209, #09F674);
+}
+.admin-container-inner-each:nth-child(6) {
+  background-image: linear-gradient(to bottom right, #1192B9, #C8CE07);
+}
+@media (max-width: 1500px) {
+  .admin-container-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .admin-container-inner {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+}
+.admin-registrations {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  overflow: auto;
+  padding: 1rem;
+  min-height: 30rem;
+  max-height: 70vh;
+}
+.admin-registrations-container {
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
 .admin-form {
   display: flex;
   max-width: 40rem;

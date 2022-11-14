@@ -26,7 +26,7 @@ const handler = async (req, res) => {
                         error: "Incorrect Credentials"
                     });
                 }
-                const Registrations = await Registration.find();
+                const Registrations = await Registration.find({status:"Approved"});
                 let registrations = [];
                 for(let i = 0; i < Registrations.length; i++){
                     let team = await Team.findById(Registrations[i].team);

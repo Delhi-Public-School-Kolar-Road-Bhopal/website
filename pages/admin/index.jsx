@@ -36,10 +36,25 @@ const Login = () => {
 }
 const Registration = (props) => {
     let [open, setOpen] = React.useState(false);
-    return (<div className='registration'>
-        <h2>{props.teamName}</h2>
-        <h3>{props.schoolName}</h3>
-        <p> </p>
+    return (<div onClick={() => setOpen(!open)} className='admin-registration'>
+        <div className='admin-registration-header'>
+            <h3>{props.teamName}</h3>
+            <h4>{props.schoolName}</h4>
+        </div>
+        {open ?
+            <div className='admin-registration-members'>
+                <p><strong>Name</strong>
+                </p><p><strong>Email</strong></p>
+                {props.members.map((member, index) => {
+                    return (<>
+                        <p>{member.name}</p>
+                        <p>{member.email}</p>
+
+                    </>)
+                })}
+            </div>
+            : null}
+
     </div>)
 }
 const Admin = () => {
@@ -88,25 +103,113 @@ const Admin = () => {
     let scioRegistrations = state.registrations.filter(reg => reg.registration.event === "Scio");
     let filmskapingRegistrations = state.registrations.filter(reg => reg.registration.event === "Filmskaping");
     let photoPerfectaRegistrations = state.registrations.filter(reg => reg.registration.event === "Photo Perfecta");
+    let espritEmails = (state.registrations.filter(a => a.registration.event === "Esprit Decode").map(a => {
+        return a.team.members.map(b => {
+            return b.email.toLowerCase();
+        }).join(", ")
+    })).join(", ");
+    let siteEmails = (state.registrations.filter(a => a.registration.event === "Site Incroyable").map(a => {
+        return a.team.members.map(b => {
+            return b.email.toLowerCase();
+        }).join(", ")
+    })).join(", ");
+    let scioEmails = (state.registrations.filter(a => a.registration.event === "Scio").map(a => {
+        return a.team.members.map(b => {
+            return b.email.toLowerCase();
+        }).join(", ")
+    })).join(", ");
+    let FilmskapingEmails = (state.registrations.filter(a => a.registration.event === "Filmskaping").map(a => {
+        return a.team.members.map(b => {
+            return b.email.toLowerCase();
+        }).join(", ")
+    })).join(", ");
+    let parabellumEmails = (state.registrations.filter(a => a.registration.event === "Filmskaping" && a.team.name !=="Mitochondria").map(a => {
+        return a.team.members.map(b => {
+            return b.email.toLowerCase();
+        }).join(", ")
+    })).join(", ");
+    let PhotoPerfectaEmails = (state.registrations.filter(a => a.registration.event === "Photo Perfecta").map(a => {
+        return a.team.members.map(b => {
+            return b.email.toLowerCase();
+        }).join(", ")
+    })).join(", ");
+ 
 
 
-    console.log("Esprit Decode", espritRegistrations);
-    console.log("Site Incroyable", siteRegistrations);
-    console.log("Filmskaping", filmskapingRegistrations);
-    console.log("Photo Perfecta", photoPerfectaRegistrations);
-    console.log("Scio Registration", scioRegistrations);
-    console.log("Parabellum", parabellumRegistrations);
 
 
-    return <div className='admin'>
+    return <div className='admin-container'>
         <div className='admin-header'>
             <h1>Hello, {state.admin.name}</h1>
         </div>
-        <div className='admin-container'>
-            <h1>Esprit Decode Registrations {espritRegistrations.length}</h1>
-
+        <div className='admin-container-inner'>
+            <div className='admin-container-inner-each'>
+                <h2>Esprit Decode Registrations: {espritRegistrations.length}</h2>
+                <div className='admin-registrations'>
+                    {espritRegistrations.map((reg, index) => {
+                        return <Registration teamName={reg.team.name} schoolName={reg.team.school} members={reg.team.members} key={index} />
+                    })}
+                </div>
+                
+                <p>Participant Emails</p>
+                <p className='admin-emails'>{espritEmails}</p>
+            </div>
+            <div className='admin-container-inner-each'>
+                <h2>Site Incroyable Registrations: {siteRegistrations.length}</h2>
+                <div className='admin-registrations'>
+                    {siteRegistrations.map((reg, index) => {
+                        return <Registration teamName={reg.team.name} schoolName={reg.team.school} members={reg.team.members} key={index} />
+                    })}
+                </div>
+                <p>Participant Emails</p>
+                <p className='admin-emails'>{siteEmails}</p>
+            </div>
+            <div className='admin-container-inner-each'>
+                <h2>Scio Registrations: {scioRegistrations.length}</h2>
+                <div className='admin-registrations'>
+                    {scioRegistrations.map((reg, index) => {
+                        return <Registration teamName={reg.team.name} schoolName={reg.team.school} members={reg.team.members} key={index} />
+                    })}
+                </div>
+                <p>Participant Emails</p>
+                <p className='admin-emails'>{scioEmails}</p>
+            </div>
+            <div className='admin-container-inner-each'>
+                <h2>Filmskaping Registrations: {filmskapingRegistrations.length}</h2>
+                <div className='admin-registrations'>
+                    {filmskapingRegistrations.map((reg, index) => {
+                        return <Registration teamName={reg.team.name} schoolName={reg.team.school} members={reg.team.members} key={index} />
+                    })}
+                </div>
+                
+                <p>Participant Emails</p>
+                <p className='admin-emails'>{FilmskapingEmails}</p>
+            </div>
+            <div className='admin-container-inner-each'>
+                <h2>Parabellum Registrations: {parabellumRegistrations.length}</h2>
+                <div className='admin-registrations'>
+                    {parabellumRegistrations.map((reg, index) => {
+                        return <Registration teamName={reg.team.name} schoolName={reg.team.school} members={reg.team.members} key={index} />
+                    })}
+                </div>
+                <p>Participant Emails</p>
+                <p className='admin-emails'>{parabellumEmails}</p>
+            </div>
+            <div className='admin-container-inner-each'>
+                <h2>Photo Perfecta Registrations: {photoPerfectaRegistrations.length}</h2>
+                <div className='admin-registrations-container'>
+                    <div className='admin-registrations'>
+                        {photoPerfectaRegistrations.map((reg, index) => {
+                            return <Registration teamName={reg.team.name} schoolName={reg.team.school} members={reg.team.members} key={index} />
+                        })}
+                    </div>
+                </div>
+                <p>Participant Emails</p>
+                <p className='admin-emails'>{PhotoPerfectaEmails}</p>
+            </div>
         </div>
     </div>
+
 }
 
 export default Admin;
