@@ -2,18 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 
     &-form {
         display: flex;
         max-width: 40rem;
         align-items: center;
         margin: 3rem;
-        h1{
+
+        h1 {
             font-size: 2.4rem;
             text-align: center;
             margin: 4rem auto;
         }
-        input{
+
+        input {
             width: calc(100% - 2rem);
             margin: 2rem;
             font-size: 2rem;
@@ -23,11 +26,19 @@
             border-radius: 1rem;
             border: 1px solid rgba(#000, 0.5);
         }
-        button{
+
+        button {
+            margin-top: 2rem;
             background-color: #000;
-            p{
-                margin: 0;
+
+            p {
+                margin: .25rem 0 0;
             }
+            display: flex;
+            height: 5rem;
+            transition: all 0.3s;
+            align-items: center;
+            justify-content: center;
             border-radius: 1rem;
             cursor: pointer;
             color: #fff;
@@ -35,6 +46,7 @@
             text-transform: uppercase;
             padding: 1rem;
         }
+
         img {
             height: 20rem;
             object-fit: cover;

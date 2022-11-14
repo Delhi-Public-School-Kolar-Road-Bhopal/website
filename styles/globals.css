@@ -1309,6 +1309,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 .admin-form {
   display: flex;
@@ -1333,7 +1334,13 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .admin-form button {
+  margin-top: 2rem;
   background-color: #000;
+  display: flex;
+  height: 5rem;
+  transition: all 0.3s;
+  align-items: center;
+  justify-content: center;
   border-radius: 1rem;
   cursor: pointer;
   color: #fff;
@@ -1342,7 +1349,7 @@ body {
   padding: 1rem;
 }
 .admin-form button p {
-  margin: 0;
+  margin: 0.25rem 0 0;
 }
 .admin-form img {
   height: 20rem;
