@@ -13,6 +13,7 @@ const Home = () => {
     <Venue />
     <InfoSection /> 
     <Register />
+    
   </div>
   )
 }
