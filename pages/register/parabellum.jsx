@@ -54,7 +54,7 @@ const Register = () => {
                 <video src='/cover.mp4' autoPlay={true} loop={true} muted={true} className="register-header-video" />
             </div>
             <div className="register-body">
-                <form className="register-form" onSubmit={async (e) => {
+                {/* <form className="register-form" onSubmit={async (e) => {
                     e.preventDefault();
                     let i = 0;
                     while(i < state.members.length){
@@ -148,7 +148,9 @@ const Register = () => {
                     <button className="register-button">Register</button>
                 </form>
                 <p>{error}</p>
-                <p>{success}</p>
+                <p>{success}</p> */}
+                
+                <h1 style={{fontSize:"3rem"}}>Registrations for the Parabellum Event have been closed</h1>
             </div>
 
         </div >

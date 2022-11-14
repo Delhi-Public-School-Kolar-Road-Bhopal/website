@@ -33,18 +33,11 @@ const Handler = async (req, res) => {
                     }
                     break;
                 case "Parabellum":
-                    if (members.length !== 6) {
-                        return res.status(400).json({
-                            error: "Parabellum requires exactly 6 members"
-                        })
-                    }
+                    return res.status(400).json({error:"Registratios for the Parabellum event have been closed"})
                     break;
                 case "Photo Perfecta":
-                    if (members.length !== 1) {
-                        return res.status(400).json({
-                            error: "Photo Perfecta requires exactly 1 member"
-                        })
-                    }
+                    
+                    return res.status(400).json({error:"Registratios for the Photo Perfecta event have been closed"})
                     break;
                 case "Filmskaping":
                     if (members.length !== 2) {
