@@ -55,7 +55,11 @@
                 color: $colorTertiaryGradient1;
                 background-image: linear-gradient(to right bottom, #5278DD, #16014B);
             }
-
+            &:nth-child(5){
+                grid-column: span 2;
+                
+                background-image: linear-gradient(to right bottom, #F45A5A, #45038F,#5278DD, #16014B);
+            }
             
 
             padding:1rem 2rem;
