@@ -35,6 +35,7 @@ const Login = () => {
     </div>
 }
 const Registration = (props) => {
+    let [open, setOpen] = React.useState(false);
     return (<div className='registration'>
         <h2>{props.teamName}</h2>
         <h3>{props.schoolName}</h3>
