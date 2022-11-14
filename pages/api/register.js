@@ -24,6 +24,7 @@ const Handler = async (req, res) => {
         await connect();
         if (req.method === "POST") {
 
+            return res.status(400).json({error:"Registrations have been closed"})
             switch (event) {
                 case "Esprit Decode":
                     if (members.length !== 2) {

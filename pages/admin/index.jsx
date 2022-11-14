@@ -34,7 +34,13 @@ const Login = () => {
         </form>
     </div>
 }
-
+const Registration = (props) => {
+    return (<div className='registration'>
+        <h2>{props.teamName}</h2>
+        <h3>{props.schoolName}</h3>
+        <p> </p>
+    </div>)
+}
 const Admin = () => {
     const [state, setState] = React.useState({ loggedIn: false, loaded: false, registrations: [], admin: {} });
     React.useEffect(() => {
@@ -81,13 +87,15 @@ const Admin = () => {
     let scioRegistrations = state.registrations.filter(reg => reg.registration.event === "Scio");
     let filmskapingRegistrations = state.registrations.filter(reg => reg.registration.event === "Filmskaping");
     let photoPerfectaRegistrations = state.registrations.filter(reg => reg.registration.event === "Photo Perfecta");
+
+
     console.log("Esprit Decode", espritRegistrations);
     console.log("Site Incroyable", siteRegistrations);
     console.log("Filmskaping", filmskapingRegistrations);
     console.log("Photo Perfecta", photoPerfectaRegistrations);
     console.log("Scio Registration", scioRegistrations);
     console.log("Parabellum", parabellumRegistrations);
-    
+
 
     return <div className='admin'>
         <div className='admin-header'>
@@ -95,7 +103,7 @@ const Admin = () => {
         </div>
         <div className='admin-container'>
             <h1>Esprit Decode Registrations {espritRegistrations.length}</h1>
-        
+
         </div>
     </div>
 }
