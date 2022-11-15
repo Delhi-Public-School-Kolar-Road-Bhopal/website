@@ -77,9 +77,9 @@ const Admin = () => {
                     }))
                 }
                 catch (err) {
+                    console.log(err)
                     localStorage.removeItem('token');
                     setState(state => ({
-                        registrations: res.data.registrations,
                         loggedIn: false,
                         loaded: true
                     }))
