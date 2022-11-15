@@ -56,8 +56,6 @@ const Register = () => {
 
                             </div>
                         </div>
-
-
                         <button className="register-button">Send</button>
                     </form>
                     <p className="register-error">{state.error}</p>
